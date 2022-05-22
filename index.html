@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta tags -->
+    <meta name="title" content="Portfolio - Bryan Deckers" />
+    <meta name="description" content="This is the portfolio of Bryan Deckers" />
+    <meta
+      name="keywords"
+      content="portfolio, bryan deckers, bryan deckers portfolio, portfolio bryan deckers"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en-US" />
+    <meta name="author" content="Bryan Deckers" />
+    <meta name="copyright" content="" />
+    <meta property="og:title" content="Portfolio - Bryan Deckers" />
+    <meta property="og:site_name" content="Portfolio" />
+    <meta
+      property="og:description"
+      content="This is the portfolio of Bryan Deckers"
+    />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      }; 
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Dark mode local storage -->
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body class="relative bg-white dark:bg-gray-700">
+    <header
+      class="bg-white dark:bg-gray-800 py-5 drop-shadow fixed w-full top-0"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center font-semibold w-[calc(100%-100px)] text-black dark:text-gray-300"
+      >
+        <a href="#home" class="text-xl">Bryan</a>
+        <nav>
+          <ul class="flex items-center gap-5 lg:gap-10 text-lg">
+            <li class="cursor-pointer hover:text-blue-700 dark:hover:text-gray-400">
+              <a href="#home">Home</a>
+            </li>
+            <li class="cursor-pointer hover:text-blue-700 dark:hover:text-gray-400">
+              <a href="#about">About</a>
+            </li>
+            <li class="cursor-pointer hover:text-blue-700 dark:hover:text-gray-400">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="cursor-pointer hover:text-blue-700 dark:hover:text-gray-400">
+              <a href="#contact">Contact</a>
+            </li>
+            <button
+              id="theme-toggle"
+              type="button"
+              class="text-gray-500 dark:text-gray-300 dark:hover:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg text-sm p-2.5"
+            >
+              <svg
+                id="theme-toggle-dark-icon"
+                class="w-5 h-5 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+              </svg>
+              <svg
+                id="theme-toggle-light-icon"
+                class="w-5 h-5 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      class="min-w-screen mt-[68px] h-[calc(100vh-68px)] w-[100vw] overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth"
+    >
+      <main
+        id="home"
+        class="flex flex-col container mx-auto min-h-[calc(100vh-68px)] w-[calc(100%-100px)] snap-start"
+      >
+        <div class="flex justify-between my-auto dark:text-gray-300">
+          <div class="font-semibold">
+            <h1 class="text-5xl">Hey, I'm Bryan!</h1>
+            <p class="text-2xl mt-4 mb-7">I am into full stack development.</p>
+            <a
+              href="#about"
+              class="text-lg px-10 py-2 bg-blue-700 dark:bg-blue-900 text-white dark:text-gray-300 font-semibold rounded-full hover:opacity-90"
+              >About Me <i class="ml-2 fa-solid fa-circle-arrow-down"></i
+            ></a>
+            <div class="mt-32 flex gap-5">
+              <a href="https://be.linkedin.com/" target="_blank" rel="noopener"
+                ><i
+                  class="fa-brands fa-linkedin-in bg-blue-700 dark:bg-blue-800 rounded-full p-3 text-white text-center cursor-pointer hover:opacity-90"
+                ></i
+              ></a>
+              <a href="https://github.com/" target="_blank" rel="noopener"
+                ><i
+                  class="fa-brands fa-github bg-gray-700 dark:bg-gray-800 rounded-full p-3 text-white text-center cursor-pointer hover:opacity-90"
+                ></i
+              ></a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener"
+                ><i
+                  class="fa-brands fa-twitter bg-blue-500 dark:bg-blue-600 rounded-full p-3 text-white text-center cursor-pointer hover:opacity-90"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <img
+              src="home.jpg"
+              alt="home background"
+              width="600"
+              height="600"
+              class="rounded shadow-lg"
+            />
+          </div>
+        </div>
+      </main>
+
+      <section
+        id="about"
+        class="flex flex-col container mx-auto min-h-[calc(100vh-68px)] w-[calc(100%-100px)] snap-start"
+      >
+        <div class="my-auto dark:text-gray-300">
+          <div class="flex flex-wrap">
+            <div>
+              <h2 class="text-3xl mb-5 font-semibold">About me</h2>
+              <div class="text-xl font-medium">
+                <p>I'm an 18 year old student from Belgium</p>
+                <p>
+                  Currently studying applied computer science at Thomas More
+                </p>
+              </div>
+            </div>
+            <div class="lg:mx-auto">
+              <p class="text-3xl font-semibold mb-5 mx-auto mt-14 md:mt-0">Skills</p>
+              <ul class="flex flex-col gap-5">
+                <li class="flex items-center">
+                  <i class="fa-brands fa-html5 text-orange-700 text-4xl"></i>
+                  <p
+                    class="text-xl ml-10 border-b-4 outline-offset-4 border-orange-700 rounded-sm"
+                  >
+                    HTML
+                  </p>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-brands fa-css3-alt text-blue-700 text-4xl"></i>
+                  <p
+                    class="text-xl ml-10 border-b-4 outline-offset-4 border-blue-700 rounded-sm"
+                  >
+                    CSS
+                  </p>
+                </li>
+                <li class="flex items-center">
+                  <i class="fa-brands fa-js text-yellow-500 text-4xl"></i>
+                  <p
+                    class="text-xl ml-9 border-b-4 outline-offset-4 border-yellow-500 rounded-sm"
+                  >
+                    Javascript
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="min-h-[calc(100vh-68px)] flex flex-col w-[calc(100%-100px)] container mx-auto snap-start scroll-smooth"
+      >
+        <div class="my-auto dark:text-gray-300">
+          <h2 class="text-3xl font-semibold mb-10">Projects</h2>
+          <div class="flex flex-wrap justify-between gap-y-5">
+            <div>
+              <p class="text-xl mb-5 underline">
+                <a href="https://busma.org" target="_blank" rel="noopener"
+                  >Busma</a
+                >
+              </p>
+              <img
+                src="busma.png"
+                alt="Busma"
+                width="400"
+                height="170"
+                class="rounded shadow-lg"
+              />
+              <p></p>
+            </div>
+            <div>
+              <p class="text-xl mb-5">SchoolAssist (WIP)</p>
+              <img
+                src="schoolassist.png"
+                alt="SchoolAssist"
+                width="400"
+                height="170"
+                class="rounded shadow-lg"
+              />
+            </div>
+            <div>
+              <p class="text-xl mb-5">Coming Soon</p>
+              <img
+                src="comingsoon.png"
+                alt="Coming Soon"
+                width="300"
+                height="170"
+                class="rounded shadow-lg mb-10"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        id="contact"
+        class="h-full min-h-[calc(100vh-68px)] flex flex-col container w-[calc(100%-100px)] mx-auto snap-start scroll-smooth"
+      >
+        <div class="my-auto dark:text-gray-300">
+          <h2 class="text-3xl font-semibold mb-5 overflow-hidden">Contact</h2>
+          <form
+            class="flex flex-col gap-5 mt-14"
+            action="mailto:ben.verbraecken@gmail.com"
+            method="post"
+            enctype="text/plain"
+            autocomplete="off"
+          >
+            <fieldset class="relative border rounded-lg bg-white dark:bg-gray-700 dark:border-gray-600">
+              <legend class="ml-5 px-2 text-gray-500 dark:text-gray-400 font-semibold">
+                Name
+              </legend>
+              <input
+                name="name"
+                autocomplete="off"
+                type="text"
+                class="w-full px-4 mb-4 mt-1 outline-none text-md italic text-gray-600 dark:text-gray-400 dark:bg-gray-700"
+                spellcheck="false"
+                required
+              />
+            </fieldset>
+            <fieldset class="relative border rounded-lg bg-white dark:bg-gray-700 dark:border-gray-600">
+              <legend class="ml-5 px-2 text-gray-500 dark:text-gray-400 font-semibold">
+                Email
+              </legend>
+              <input
+                name="email"
+                autocomplete="none"
+                autocomplete="false"
+                type="email"
+                class="w-full px-4 mb-4 mt-1 outline-none text-md italic text-gray-600 dark:text-gray-400 dark:bg-gray-700"
+                spellcheck="false"
+                required
+              />
+            </fieldset>
+            <fieldset class="relative border rounded-lg bg-white dark:bg-gray-700 dark:border-gray-600">
+              <legend class="ml-5 px-2 text-gray-500 dark:text-gray-400 font-semibold">
+                Message
+              </legend>
+              <textarea
+                name="message"
+                autocomplete="none"
+                autocomplete="false"
+                class="w-full px-3 min-h-12 outline-none text-md italic text-gray-600 dark:text-gray-400 resize-none dark:bg-gray-700"
+                spellcheck="false"
+                rows="5"
+                required
+              ></textarea>
+            </fieldset>
+            <button
+              type="submit"
+              class="bg-green-600 dark:bg-opacity-50 bg-opacity-70 text-white dark:text-gray-200 rounded-lg px-10 w-fit h-12 mt-3 font-semibold ml-auto"
+            >
+              Send Your Message
+            </button>
+          </form>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

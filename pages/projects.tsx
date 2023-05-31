@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import busma from "../public/images/busma.png";
+import { NextPage } from "next";
 
-export default function Projects() {
+const ProjectsPage: NextPage = () => {
   return (
     <main className="">
       <h1 className="text-3xl font-semibold mb-20">Projects</h1>
@@ -27,4 +28,6 @@ export default function Projects() {
       </div>
     </main>
   );
-}
+};
+
+export default ProjectsPage;

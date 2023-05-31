@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import { FunctionComponent } from "react";
 
 type NavbarData = {
-  darkMode: boolean;
+  
 };
 
 const Navbar: FunctionComponent<NavbarData> = (darkMode) => {
@@ -28,7 +28,7 @@ const Navbar: FunctionComponent<NavbarData> = (darkMode) => {
               <Link href="/contact">Contact</Link>
             </li>
             <Icon
-              icon={darkMode ? "ic:baseline-dark-mode" : "ic:outline-dark-mode"}
+              icon="ic:baseline-dark-mode"
             />
           </ul>
         </nav>

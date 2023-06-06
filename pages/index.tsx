@@ -5,69 +5,66 @@ import Link from "next/link";
 
 const HomePage: NextPage = () => {
   return (
-    <div className="min-w-screen mt-[68px] h-[calc(100vh-68px)] w-[100vw] overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth">
-      <main
-        id="home"
-        className="flex flex-col container mx-auto min-h-[calc(100vh-68px)] w-[calc(100%-100px)] snap-start"
-      >
-        <div className="flex justify-between my-auto dark:text-gray-300">
-          <div className="font-semibold">
-            <h1 className="text-5xl">Hey, I&apos;m Bryan!</h1>
-            <p className="text-2xl mt-4 mb-7">
-              I am into full stack development.
-            </p>
-            <Link
-              href="/about"
-              className="text-lg px-10 py-2 bg-blue-700 dark:bg-blue-900 text-white dark:text-gray-300 font-semibold rounded-full hover:opacity-90"
-            >
-              About Me
-            </Link>
-            <div className="mt-32 flex gap-5">
-              <Link
-                href="https://www.linkedin.com/in/bryandeckers/"
-                target="_blank"
-                rel="noopener"
-              >
-                <Icon
-                  icon="fa-brands:linkedin"
-                  className="bg-blue-700 dark:bg-blue-800 rounded-full p-3 text-white text-center cursor-pointer hover:opacity-90"
-                />
-              </Link>
-              <Link
-                href="https://github.com/bryandeckers"
-                target="_blank"
-                rel="noopener"
-              >
-                <Icon
-                  icon="fa-brands:github"
-                  className="bg-gray-700 dark:bg-gray-800 rounded-full p-3 text-white text-center cursor-pointer hover:opacity-90"
-                />
-              </Link>
-              <Link
-                href="https://www.taskade.com/d/gnCzA8B1QYCckhpW?share=edit&edit=4vKCYuwG7NNkZgzw&as=list"
-                target="_blank"
-                rel="noopener"
-              >
-                <Icon
-                  icon="logos:taskade"
-                  className="bg-gray-700 dark:bg-gray-800 rounded-full p-3 text-white text-center cursor-pointer hover:opacity-90"
-                />
-              </Link>
+    <div className="flex flex-col items-center justify-center w-full mt-52">
+      {/* Hero section */}
+      <div className="flex gap-20">
+        <div className="flex flex-col">
+          <div className="flex-grow">
+            <h1 className="text-6xl font-bold mb-5">Full stack developer</h1>
+            <div className="">
+              <p className="">
+                Hey, I&apos;m Bryan Deckers, a passionate developer based in the
+                beautiful Limburg, Belgium
+                <Icon icon="twemoji:flag-belgium" className="mb-1 ml-2 text-2xl inline" />
+              </p>
             </div>
           </div>
-          <div className="hidden lg:block">
-            <Image
-              src="home.jpg"
-              alt="home background"
-              width="600"
-              height="600"
-              className="rounded shadow-lg"
-            />
+          {/* Github & LinkedIn & Taskade */}
+          <div className="flex gap-5 mt-10">
+            <Link
+              href="https://www.linkedin.com/in/bryandeckers/"
+              target="_blank"
+              rel="noopener"
+            >
+              <Icon icon="fa-brands:linkedin" className="text-2xl" />
+            </Link>
+            <Link
+              href="https://github.com/bryandeckers"
+              target="_blank"
+              rel="noopener"
+            >
+              <Icon icon="fa-brands:github" className="text-2xl" />
+            </Link>
+            <Link
+              href="https://www.taskade.com/d/gnCzA8B1QYCckhpW?share=edit&edit=4vKCYuwG7NNkZgzw&as=list"
+              target="_blank"
+              rel="noopener"
+            >
+              <Icon icon="logos:taskade" className="text-2xl" />
+            </Link>
           </div>
         </div>
-      </main>
+        {/* Image of myself */}
+        <Image
+          src=""
+          alt="Image of myself on the landing page"
+          className="w-1/2"
+        />
+      </div>
+      {/* Tech stack */}
+      <div className="flex gap-14 items-center justify-center w-full mt-24">
+        <div className="flex gap-5 items-center">
+          <p className="text-lg font-bold">Tech Stack</p>
+          <p className="text-2xl">|</p>
+        </div>
+        <Icon icon="devicon:nextjs-wordmark" className="text-7xl" />
+        <Icon icon="devicon:tailwindcss" className="text-5xl" />
+        <Icon icon="devicon:react" className="text-4xl" />
+        <Icon icon="devicon:typescript" className="text-4xl" />
+        <Icon icon="devicon:python" className="text-4xl" />
+      </div>
     </div>
   );
-}
+};
 
 export default HomePage;

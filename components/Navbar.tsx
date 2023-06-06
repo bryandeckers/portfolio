@@ -15,10 +15,10 @@ const Navbar: FunctionComponent<NavbarData> = () => {
           Bryan Deckers
         </Link>
         <nav>
-          <ul className="flex items-center gap-5 lg:gap-10 text-lg">
+          <ul className="flex items-center gap-5 lg:gap-10 text-xl">
             <NavItem link="/" text="Home" />
             <NavItem link="/about" text="About" />
-            <NavItem link="/projects" text="Home" />
+            <NavItem link="/projects" text="Projects" />
             <NavItem link="/contact" text="Contact" />
             <Icon
               icon="ic:baseline-dark-mode"

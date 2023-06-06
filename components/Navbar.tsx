@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { FunctionComponent } from "react";
 import NavItem from "./NavItem";
+import Image from "next/image";
+import logo from '../public/images/bd-logo-black.png';
 
 type NavbarData = {
   
@@ -11,8 +13,8 @@ const Navbar: FunctionComponent<NavbarData> = () => {
   return (
     <header className="bg-white w-full mt-10">
       <div className="container mx-auto flex justify-between items-center font-bold w-[calc(100%-100px)] text-black ">
-        <Link href="/" className="text-xl">
-          Bryan Deckers
+        <Link href="/" className="text-xl w-20">
+          <Image src={logo} alt="Logo" />
         </Link>
         <nav>
           <ul className="flex items-center gap-5 lg:gap-10 text-xl">

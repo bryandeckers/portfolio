@@ -6,12 +6,11 @@ import Head from "next/head";
 
 const ProjectsPage: NextPage = () => {
   return (
-    <main className="">
+    <main className="container px-60 mt-20">
       <Head>
         <title>Bryan Deckers | Projects</title>
       </Head>
-      <div className="container px-60 mt-20">
-        <h1 className="text-4xl font-bold mb-20">Projects</h1>
+        <h2 className="text-4xl font-bold mb-20">Projects</h2>
         <div className="flex flex-col gap-20 mb-20">
           <ProjectCard
             title="Waaiburg"
@@ -34,7 +33,6 @@ const ProjectsPage: NextPage = () => {
             <Icon icon="devicon:figma" className="text-4xl" />
           </ProjectCard>
         </div>
-      </div>
     </main>
   );
 };

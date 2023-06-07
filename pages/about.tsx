@@ -5,7 +5,7 @@ import { NextPage } from "next";
 
 const AboutPage: NextPage = () => {
   return (
-    <main className="container px-60 mt-20">
+    <main className="container px-30 lg:px-60 mt-20">
       <PageHeader title="About" />
 
       <h2 className="mb-5">Welcome! I&apos;m Bryan Deckers, and I&apos;m delighted to have you here on my portfolio page. Let me share a bit about myself. I&apos;m currently studying Digital Innovation, and I must say, it&apos;s a program that truly resonates with me. One of the aspects I appreciate the most is its project-based learning approach, which enables me to work with real clients. It&apos;s a refreshing departure from the traditional classroom setup, as it allows me to apply my skills and knowledge in practical, real-world scenarios.</h2>

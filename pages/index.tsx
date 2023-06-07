@@ -4,8 +4,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-// TODO: Fix favicon with logo
-
 const HomePage: NextPage = () => {
   return (
     <main className="container px-60 mt-44">

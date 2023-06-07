@@ -1,8 +1,10 @@
 import ProjectCard from "@/components/ProjectCard";
 import { Icon } from "@iconify/react";
 import { NextPage } from "next";
-import waaiburg from "../public/images/waaiburgdashboard.png";
 import Head from "next/head";
+
+import waaiburg from "../public/images/waaiburgdashboard.png";
+import dfk from "../public/images/dfkteams.png";
 
 const ProjectsPage: NextPage = () => {
   return (
@@ -24,7 +26,7 @@ const ProjectsPage: NextPage = () => {
           <ProjectCard
             title="Dartsfederatie Kempen"
             description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis unde voluptas iusto nihil deserunt. Voluptate sunt perferendis quasi debitis voluptas ipsa ab modi quod at accusantium mollitia asperiores, qui quam?"
-            image={waaiburg}
+            image={dfk}
           >
             <Icon icon="devicon:nextjs-wordmark" className="text-5xl" />
             <Icon icon="devicon:typescript" className="text-4xl" />

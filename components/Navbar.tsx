@@ -6,7 +6,7 @@ import logo from '../public/images/bd-logo-black.png';
 
 const Navbar: FunctionComponent = () => {
   return (
-    <header className="bg-white w-full mt-5">
+    <header className="mt-5">
       <div className="container flex justify-between items-center font-bold w-[calc(100%-100px)]">
         <Link href="/" className="text-xl w-20">
           <Image src={logo} alt="Logo" />

@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +8,10 @@ import Link from "next/link";
 
 const HomePage: NextPage = () => {
   return (
-    <div className="container px-60 mt-44">
+    <main className="container px-60 mt-44">
+      <Head>
+        <title>Bryan Deckers</title>
+      </Head>
       {/* Hero section */}
       <div className="flex gap-20">
         <div className="flex flex-col">
@@ -66,7 +70,7 @@ const HomePage: NextPage = () => {
         <Icon icon="devicon:laravel" className="text-4xl" />
         <Icon icon="devicon:python" className="text-4xl" />
       </div>
-    </div>
+    </main>
   );
 };
 

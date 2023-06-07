@@ -1,8 +1,12 @@
 import { NextPage } from "next";
+import Head from "next/head";
 
 const ContactPage: NextPage = () => {
   return (
     <main className="container px-60 mt-20">
+      <Head>
+        <title>Bryan Deckers | Contact</title>
+      </Head>
       <h2 className="text-4xl font-bold mb-20">Contact</h2>
       <form
         className="flex flex-col gap-5 mt-14"

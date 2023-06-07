@@ -2,10 +2,14 @@ import ProjectCard from "@/components/ProjectCard";
 import { Icon } from "@iconify/react";
 import { NextPage } from "next";
 import waaiburg from "../public/images/waaiburgdashboard.png";
+import Head from "next/head";
 
 const ProjectsPage: NextPage = () => {
   return (
     <main className="">
+      <Head>
+        <title>Bryan Deckers | Projects</title>
+      </Head>
       <div className="container px-60 mt-20">
         <h1 className="text-4xl font-bold mb-20">Projects</h1>
         <div className="flex flex-col gap-20 mb-20">

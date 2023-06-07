@@ -4,13 +4,15 @@ import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import myself from "../public/images/myself.png";
+
 const HomePage: NextPage = () => {
   return (
     <main className="container px-60 mt-44">
       <PageHeader />
 
       {/* Hero section */}
-      <div className="flex gap-20">
+      <div className="flex gap-32">
         <div className="flex flex-col">
           <div className="flex-grow">
             <h1 className="text-6xl font-bold mb-5">Full stack developer</h1>
@@ -51,16 +53,14 @@ const HomePage: NextPage = () => {
           </div>
         </div>
         {/* Image of myself */}
-        <Image
-          src=""
-          alt="Image of myself on the landing page"
-          className="w-1/2"
-        />
+        <div className="w-1/2 h-80 rounded-full relative">
+          <Image src={myself} alt="Image of myself on the landing page" priority={true} fill={true} className="object-top object-cover" />
+        </div>
       </div>
       {/* Tech stack */}
-      <div className="flex gap-14 items-center w-full mt-24">
+      <div className="flex gap-14 items-center w-full mt-24 mb-40">
         <div className="flex gap-5 items-center">
-          <p className="text-lg font-bold">Tech Stack</p>
+          <p className="text-lg font-bold">Tech&nbsp;Stack</p>
           <p className="text-2xl">|</p>
         </div>
         <Icon icon="devicon:nextjs-wordmark" className="text-7xl" />

@@ -1,15 +1,14 @@
+import PageHeader from "@/components/PageHeader";
 import { Icon } from "@iconify/react";
 import { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 const HomePage: NextPage = () => {
   return (
     <main className="container px-60 mt-44">
-      <Head>
-        <title>Bryan Deckers</title>
-      </Head>
+      <PageHeader />
+
       {/* Hero section */}
       <div className="flex gap-20">
         <div className="flex flex-col">
@@ -19,7 +18,10 @@ const HomePage: NextPage = () => {
               <p className="">
                 Hey, I&apos;m Bryan Deckers, a passionate developer based in the
                 beautiful Limburg, Belgium
-                <Icon icon="twemoji:flag-belgium" className="mb-1 ml-2 text-2xl inline" />
+                <Icon
+                  icon="twemoji:flag-belgium"
+                  className="mb-1 ml-2 text-2xl inline"
+                />
               </p>
             </div>
           </div>

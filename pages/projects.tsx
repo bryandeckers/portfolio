@@ -13,16 +13,16 @@ const ProjectsPage: NextPage = () => {
       <div className="flex flex-col gap-20 mb-20">
         <ProjectCard
           title="Waaiburg"
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis unde voluptas iusto nihil deserunt. Voluptate sunt perferendis quasi debitis voluptas ipsa ab modi quod at accusantium mollitia asperiores, qui quam?"
+          description="The Waaiburg Webapp/App is a custom-made web application developed for The Waaiburg, an organization that supports young people in difficult home situations. This web app provides complete control over the associated mobile app, allowing The Waaiburg staff to manage functionality, user accounts, and gather valuable data to evaluate the app's effectiveness."
           image={waaiburg}
         >
-          <Icon icon="devicon:tailwindcss" className="text-5xl" />
           <Icon icon="devicon:laravel" className="text-4xl" />
           <Icon icon="devicon:flutter" className="text-3xl" />
+          <Icon icon="devicon:tailwindcss" className="text-5xl" />
         </ProjectCard>
         <ProjectCard
           title="Dartsfederatie Kempen"
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis unde voluptas iusto nihil deserunt. Voluptate sunt perferendis quasi debitis voluptas ipsa ab modi quod at accusantium mollitia asperiores, qui quam?"
+          description="The Dartsfedartie Kempen Web Application project is a comprehensive solution created for Dartsfedartie Kempen, one of the largest, if not the largest, darts federations in the Kempen region. The goal was to develop a robust web application that enables them to efficiently manage and update their players, teams, and clubs, as well as schedule matches and input scores. This web application greatly streamlines their workflow, providing a user-friendly platform to enhance their administrative tasks."
           image={dfk}
           href="https://dartsfederatiekempen.be"
         >

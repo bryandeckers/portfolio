@@ -3,11 +3,11 @@ import { NextPage } from "next";
 
 const ContactPage: NextPage = () => {
   return (
-    <main className="container px-60 mt-20">
+    <main className="container px-30 lg:px-60 mt-20">
       <PageHeader title="Contact" />
 
       <form
-        className="flex flex-col gap-5 mt-14"
+        className="flex flex-col gap-5 mt-14 mb-20"
         action="mailto:bryan.deckers1@gmail.com"
         method="post"
       >

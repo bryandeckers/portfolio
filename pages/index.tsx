@@ -67,6 +67,7 @@ const HomePage: NextPage = () => {
         <Icon icon="devicon:typescript" className="text-4xl" />
         <Icon icon="devicon:laravel" className="text-4xl" />
         <Icon icon="devicon:python" className="text-4xl" />
+        <Icon icon="devicon:figma" className="text-4xl" />
       </div>
     </main>
   );

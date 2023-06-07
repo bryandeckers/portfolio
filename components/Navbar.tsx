@@ -11,8 +11,8 @@ type NavbarData = {
 
 const Navbar: FunctionComponent<NavbarData> = () => {
   return (
-    <header className="bg-white w-full mt-10">
-      <div className="container mx-auto flex justify-between items-center font-bold w-[calc(100%-100px)] text-black ">
+    <header className="bg-white w-full mt-5">
+      <div className="container flex justify-between items-center font-bold w-[calc(100%-100px)]">
         <Link href="/" className="text-xl w-20">
           <Image src={logo} alt="Logo" />
         </Link>

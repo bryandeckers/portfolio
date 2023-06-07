@@ -63,6 +63,7 @@ const HomePage: NextPage = () => {
         <Icon icon="devicon:tailwindcss" className="text-5xl" />
         <Icon icon="devicon:react" className="text-4xl" />
         <Icon icon="devicon:typescript" className="text-4xl" />
+        <Icon icon="devicon:laravel" className="text-4xl" />
         <Icon icon="devicon:python" className="text-4xl" />
       </div>
     </div>

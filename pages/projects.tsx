@@ -1,29 +1,34 @@
-import Image from "next/image";
-import Link from "next/link";
-
-import busma from "../public/images/busma.png";
+import ProjectCard from "@/components/ProjectCard";
+import { Icon } from "@iconify/react";
 import { NextPage } from "next";
+import waaiburg from "../public/images/waaiburgdashboard.png";
 
 const ProjectsPage: NextPage = () => {
   return (
     <main className="">
-      <h1 className="text-3xl font-semibold mb-20">Projects</h1>
-      <div className="flex flex-col md:flex-row gap-10 md:gap-40">
-        <div className="w-full md:w-2/3">
-          {/* sizing on div */}
-          <Image src={busma} alt="busma" />
-        </div>
-        <div className="w-full md:w-1/3 flex flex-col justify-between">
-          <div>
-            <h2 className="text-xl font-medium mb-5">Project 1</h2>
-            <p>project beschrijving</p>
-          </div>
-          <div>
-            <p className="mb-10">Technische details</p>
-            <Link href="" className="mt-auto ">
-              Link naar project 1
-            </Link>
-          </div>
+      <div className="container px-60 mt-20">
+        <h1 className="text-4xl font-bold mb-20">Projects</h1>
+        <div className="flex flex-col gap-20 mb-20">
+          <ProjectCard
+            title="Waaiburg"
+            description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis unde voluptas iusto nihil deserunt. Voluptate sunt perferendis quasi debitis voluptas ipsa ab modi quod at accusantium mollitia asperiores, qui quam?"
+            image={waaiburg}
+          >
+            <Icon icon="devicon:tailwindcss" className="text-5xl" />
+            <Icon icon="devicon:laravel" className="text-4xl" />
+            <Icon icon="devicon:flutter" className="text-3xl" />
+          </ProjectCard>
+          <ProjectCard
+            title="Dartsfederatie Kempen"
+            description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis unde voluptas iusto nihil deserunt. Voluptate sunt perferendis quasi debitis voluptas ipsa ab modi quod at accusantium mollitia asperiores, qui quam?"
+            image={waaiburg}
+          >
+            <Icon icon="devicon:nextjs-wordmark" className="text-5xl" />
+            <Icon icon="devicon:typescript" className="text-4xl" />
+            <Icon icon="devicon:cloudflare" className="text-5xl" />
+            <Icon icon="devicon:tailwindcss" className="text-5xl" />
+            <Icon icon="devicon:figma" className="text-4xl" />
+          </ProjectCard>
         </div>
       </div>
     </main>

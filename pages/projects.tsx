@@ -27,6 +27,7 @@ const ProjectsPage: NextPage = () => {
             title="Dartsfederatie Kempen"
             description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis unde voluptas iusto nihil deserunt. Voluptate sunt perferendis quasi debitis voluptas ipsa ab modi quod at accusantium mollitia asperiores, qui quam?"
             image={dfk}
+            href="https://dartsfederatiekempen.be"
           >
             <Icon icon="devicon:nextjs-wordmark" className="text-5xl" />
             <Icon icon="devicon:typescript" className="text-4xl" />

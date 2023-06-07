@@ -1,3 +1,4 @@
+import Layout from "@/components/Layout";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
@@ -11,7 +12,9 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={montserrat.className}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </main>
   );
 }

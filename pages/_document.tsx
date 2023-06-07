@@ -9,7 +9,7 @@ export default function Document() {
     <Html lang="nl-BE" >
       <Head />
       <Navbar />
-      <body className='bg-white'>
+      <body className='bg-white text-customblack'>
         <Main />
         <NextScript />
       </body>

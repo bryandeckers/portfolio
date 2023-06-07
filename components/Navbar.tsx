@@ -4,6 +4,8 @@ import NavItem from "./NavItem";
 import Image from "next/image";
 import logo from '../public/images/bd-logo-black.png';
 
+// TODO: Make mobile friendly with hamburger icon
+
 const Navbar: FunctionComponent = () => {
   return (
     <header className="mt-5">

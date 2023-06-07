@@ -8,7 +8,7 @@ import myself from "../public/images/myself.png";
 
 const HomePage: NextPage = () => {
   return (
-    <main className="container px-60 mt-44">
+    <main className="container px-30 lg:px-60 mt-44">
       <PageHeader />
 
       {/* Hero section */}
@@ -54,22 +54,30 @@ const HomePage: NextPage = () => {
         </div>
         {/* Image of myself */}
         <div className="w-1/2 h-80 rounded-full relative">
-          <Image src={myself} alt="Image of myself on the landing page" priority={true} fill={true} className="object-top object-cover" />
+          <Image
+            src={myself}
+            alt="Image of myself on the landing page"
+            priority={true}
+            fill={true}
+            className="object-top object-cover"
+          />
         </div>
       </div>
       {/* Tech stack */}
-      <div className="flex gap-14 items-center w-full mt-24 mb-40">
+      <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-40">
         <div className="flex gap-5 items-center">
           <p className="text-lg font-bold">Tech&nbsp;Stack</p>
           <p className="text-2xl">|</p>
         </div>
-        <Icon icon="devicon:nextjs-wordmark" className="text-7xl" />
-        <Icon icon="devicon:tailwindcss" className="text-5xl" />
-        <Icon icon="devicon:react" className="text-4xl" />
-        <Icon icon="devicon:typescript" className="text-4xl" />
-        <Icon icon="devicon:laravel" className="text-4xl" />
-        <Icon icon="devicon:python" className="text-4xl" />
-        <Icon icon="devicon:figma" className="text-4xl" />
+        <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
+          <Icon icon="devicon:nextjs-wordmark" className="text-7xl" />
+          <Icon icon="devicon:tailwindcss" className="text-5xl" />
+          <Icon icon="devicon:react" className="text-4xl" />
+          <Icon icon="devicon:typescript" className="text-4xl" />
+          <Icon icon="devicon:laravel" className="text-4xl" />
+          <Icon icon="devicon:python" className="text-4xl" />
+          <Icon icon="devicon:figma" className="text-4xl" />
+        </div>
       </div>
     </main>
   );

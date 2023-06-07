@@ -42,6 +42,7 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
             </Link>
           </div>
           <p>{description}</p>
+          <Link href="" className="mt-5 px-4 py-2 rounded-md bg-customblack text-white w-fit">Tell me more!</Link>
           <div className="flex justify-center gap-10 items-center mt-10">
             {children}
           </div>

@@ -8,7 +8,7 @@ import myself from "../public/images/myself.png";
 
 const HomePage: NextPage = () => {
   return (
-    <main className="container px-30 lg:px-60 mt-44">
+    <main className="container px-30 lg:px-60 mt-40">
       <PageHeader />
 
       {/* Hero section */}
@@ -64,7 +64,7 @@ const HomePage: NextPage = () => {
         </div>
       </div>
       {/* Tech stack */}
-      <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-40">
+      <div className="flex flex-col lg:flex-row gap-14 mt-24">
         <div className="flex gap-5 items-center">
           <p className="text-lg font-bold">Tech&nbsp;Stack</p>
           <p className="text-2xl">|</p>

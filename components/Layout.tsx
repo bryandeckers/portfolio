@@ -8,7 +8,7 @@ type LayoutData = {
 
 const Layout: FunctionComponent<LayoutData> = ({ children }) => {
   return (
-    <div className="">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       {children}
       <Footer />

@@ -1,9 +1,31 @@
+import { Icon } from "@iconify/react";
+import Link from "next/link";
 import { FunctionComponent } from "react";
 
 const Footer: FunctionComponent = () => {
   return (
-    <div></div>
+    <div className="bg-customblack py-10 text-white mt-auto">
+      <div className="container flex justify-between items-center">
+        <p>Bryan Deckers &copy; {new Date().getFullYear()}</p>
+        <div className="flex gap-5">
+          <Link
+            href="https://www.linkedin.com/in/bryandeckers/"
+            target="_blank"
+            rel="noopener"
+          >
+            <Icon icon="fa-brands:linkedin" className="text-2xl" />
+          </Link>
+          <Link
+            href="https://github.com/bryandeckers"
+            target="_blank"
+            rel="noopener"
+          >
+            <Icon icon="fa-brands:github" className="text-2xl" />
+          </Link>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default Footer;

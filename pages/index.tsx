@@ -64,10 +64,10 @@ const HomePage: NextPage = () => {
         </div>
       </div>
       {/* Tech stack */}
-      <div className="flex flex-col lg:flex-row gap-14 mt-24">
-        <div className="flex gap-5 items-center">
+      <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-20 md:mb-5">
+        <div className="flex gap-5 items-center justify-center md:justify-normal">
           <p className="text-lg font-bold">Tech&nbsp;Stack</p>
-          <p className="text-2xl">|</p>
+          <p className="text-2xl hidden md:block">|</p>
         </div>
         <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
           <Icon icon="devicon:nextjs-wordmark" className="text-7xl" />

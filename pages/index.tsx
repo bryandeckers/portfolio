@@ -3,9 +3,11 @@ import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+// TODO: Fix favicon with logo
+
 const HomePage: NextPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full mt-52">
+    <div className="container px-60 mt-44">
       {/* Hero section */}
       <div className="flex gap-20">
         <div className="flex flex-col">
@@ -52,7 +54,7 @@ const HomePage: NextPage = () => {
         />
       </div>
       {/* Tech stack */}
-      <div className="flex gap-14 items-center justify-center w-full mt-24">
+      <div className="flex gap-14 items-center w-full mt-24">
         <div className="flex gap-5 items-center">
           <p className="text-lg font-bold">Tech Stack</p>
           <p className="text-2xl">|</p>

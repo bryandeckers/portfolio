@@ -6,6 +6,8 @@ import waaiburg from "../public/images/waaiburgdashboard.png";
 import dfk from "../public/images/dfkteams.png";
 import PageHeader from "@/components/PageHeader";
 
+// TODO: Open projects in detail when clicking them with more information such as screenshots of final result, my role in the project, etc
+
 const ProjectsPage: NextPage = () => {
   return (
     <main className="container px-30 lg:px-60 mt-20">

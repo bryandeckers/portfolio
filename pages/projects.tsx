@@ -8,7 +8,7 @@ import PageHeader from "@/components/PageHeader";
 
 const ProjectsPage: NextPage = () => {
   return (
-    <main className="container px-60 mt-20">
+    <main className="container px-30 lg:px-60 mt-20">
       <PageHeader title="Projects" />
       <div className="flex flex-col gap-20 mb-20">
         <ProjectCard

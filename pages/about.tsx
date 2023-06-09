@@ -16,12 +16,21 @@ const AboutPage: NextPage = () => {
       <p className="mb-5">
         Welcome! I&apos;m Bryan Deckers, and I&apos;m delighted to have you here
         on my portfolio page. Let me share a bit about myself. I&apos;m
-        currently studying Digital Innovation, and I must say, it&apos;s a
-        program that truly resonates with me. One of the aspects I appreciate
-        the most is its project-based learning approach, which enables me to
-        work with real clients. It&apos;s a refreshing departure from the
-        traditional classroom setup, as it allows me to apply my skills and
-        knowledge in practical, real-world scenarios.
+        currently studying{" "}
+        <Link
+          href="https://digitalinnovation.be/"
+          target="_blank"
+          rel="noopener"
+          className="inline underline hover:text-blue-700"
+        >
+          Digital Innovation
+        </Link>
+        <Icon icon="octicon:link-16" className="inline ml-1" />, and I must say,
+        it&apos;s a program that truly resonates with me. One of the aspects I
+        appreciate the most is its project-based learning approach, which
+        enables me to work with real clients. It&apos;s a refreshing departure
+        from the traditional classroom setup, as it allows me to apply my skills
+        and knowledge in practical, real-world scenarios.
       </p>
       <p className="mb-5">
         Outside of my studies, I find great satisfaction in working on my car.
@@ -39,15 +48,17 @@ const AboutPage: NextPage = () => {
       </div>
       <p className="mb-5">
         In terms of coding, I&apos;ve developed proficiency in several languages
-        and frameworks. I&apos;m well-versed in HTML, JavaScript, and
-        TypeScript, which I frequently use alongside React/Next.js to build
-        dynamic and responsive web applications. Python is another language I
-        enjoy working with, and I&apos;ve also gained familiarity with Java. To
-        streamline collaboration and ensure smooth development processes, I rely
-        on tools like GitHub and Figma. Additionally, I&apos;m skilled in using
-        Postman for API testing. When it comes to styling, I rely on the
-        versatility of Tailwind CSS to create visually appealing and
-        user-friendly interfaces.
+        and frameworks. I&apos;m well-versed in HTML{" "}
+        <Icon icon="devicon:html5" className="inline mb-1" />, JavaScript{" "}
+        <Icon icon="devicon:javascript" className="inline mb-1" />, and
+        TypeScript{" "}<Icon icon="devicon:typescript" className="inline mb-1" />,
+        which I frequently use alongside React/Next.js {" "}<Icon icon="devicon:nextjs" className="inline mb-1 text-xl" /> to build dynamic and
+        responsive web applications. Python{" "}<Icon icon="devicon:python" className="inline mb-1 text-xl" />is another language I enjoy working
+        with, and I&apos;ve also gained familiarity with Java<Icon icon="devicon:java" className="inline mb-1 text-xl" />. To streamline
+        collaboration and ensure smooth development processes, I rely on tools
+        like GitHub{" "}<Icon icon="devicon:github" className="inline mb-1 text-xl" /> and Figma{" "}<Icon icon="devicon:figma" className="inline mb-1 text-xl" />. Additionally, I&apos;m skilled in using Postman{" "}<Icon icon="devicon:postman" className="inline mb-1 text-xl" />
+        {" "}for API testing. When it comes to styling, I rely on the versatility of
+        Tailwind CSS{" "}<Icon icon="devicon:tailwindcss" className="inline mb-1 text-xl" /> to create visually appealing and user-friendly interfaces.
       </p>
       <p className="mb-5">
         In essence, I&apos;m a dedicated individual who thrives on challenges
@@ -56,7 +67,9 @@ const AboutPage: NextPage = () => {
         any questions or are interested in potential collaborations, please
         don&apos;t hesitate to reach out.
       </p>
-      <p className="mb-5">If you want to checkout my resume you can do so right here:</p>
+      <p className="mb-5">
+        If you want to checkout my resume you can do so right here:
+      </p>
       <Link
         href="/resume.pdf"
         target="_blank"

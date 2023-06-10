@@ -20,8 +20,8 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
   children,
 }) => {
   return (
-    <div className="border rounded-xl drop-shadow-md">
-      <div className="flex flex-col xl:flex-row items-center gap-10 p-10 drop-shadow-md">
+    <div className="w-full border rounded-xl drop-shadow-md">
+      <div className="flex flex-col xl:flex-row justify-center md:justify-normal items-center gap-10 p-10 drop-shadow-md">
         {/* project image */}
         <div className="w-full xl:w-1/2">
           <Image src={image} alt="" className="rounded-lg" />

@@ -43,7 +43,7 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
           </div>
           <p>{description}</p>
           <Link href={`/projects/`+ title.toLowerCase().replaceAll(" ", "")} className="mt-5 px-4 py-2 rounded-md bg-customblack text-white w-fit">Tell me more!</Link>
-          <div className="flex justify-center gap-10 items-center mt-10">
+          <div className="flex flex-wrap justify-center gap-10 items-center mt-10">
             {children}
           </div>
         </div>

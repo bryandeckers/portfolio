@@ -13,14 +13,14 @@ const Footer: FunctionComponent = () => {
             target="_blank"
             rel="noopener"
           >
-            <Icon icon="fa-brands:linkedin" className="text-4xl md:text-2xl" />
+            <Icon icon="fa-brands:linkedin" className="text-4xl" />
           </Link>
           <Link
             href="https://github.com/bryandeckers"
             target="_blank"
             rel="noopener"
           >
-            <Icon icon="fa-brands:github" className="text-4xl md:text-2xl" />
+            <Icon icon="fa-brands:github" className="text-4xl" />
           </Link>
         </div>
       </div>

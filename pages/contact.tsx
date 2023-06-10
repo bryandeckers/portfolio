@@ -45,7 +45,7 @@ const ContactPage: NextPage = () => {
         </fieldset>
         <button
           type="submit"
-          className="bg-green-600 text-white rounded-lg px-10 w-fit h-12 mt-3 font-semibold ml-auto"
+          className="bg-green-600 text-white rounded-lg px-10 w-full md:w-fit h-12 mt-3 font-semibold ml-auto"
         >
           Send Your Message
         </button>

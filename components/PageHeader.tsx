@@ -3,15 +3,16 @@ import { FunctionComponent } from "react";
 
 type PageHeaderData = {
   title?: string;
+  noTitleText?: boolean;
 };
 
-const PageHeader: FunctionComponent<PageHeaderData> = ({ title }) => {
+const PageHeader: FunctionComponent<PageHeaderData> = ({ title, noTitleText }) => {
   return (
     <>
       <Head>
         <title>Bryan Deckers {title && "- " + title}</title>
       </Head>
-      {title && <h1 className="text-6xl font-bold mb-20">{title}</h1>}
+      {title && !noTitleText && <h1 className="text-6xl font-bold mb-20">{title}</h1>}
     </>
   );
 };

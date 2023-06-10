@@ -39,7 +39,7 @@ const ProjectDetailedPage: NextPage = () => {
 
   return (
     <main className="container px-30 lg:px-60 mt-20">
-      <PageHeader title={project.title} />
+      <PageHeader title={project.title} noTitleText={true} />
       <Link href="/projects" className="hover:underline">
         Back to projects
       </Link>

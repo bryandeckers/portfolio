@@ -12,10 +12,10 @@ const HomePage: NextPage = () => {
       <PageHeader />
 
       {/* Hero section */}
-      <div className="flex gap-32">
+      <div className="flex gap-5 md:gap-32">
         <div className="flex flex-col">
           <div className="flex-grow">
-            <h1 className="text-6xl font-bold mb-5">Full stack developer</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-5">Full stack developer</h1>
             <div className="">
               <p className="">
                 Hey, I&apos;m Bryan Deckers, a passionate developer based in the
@@ -53,7 +53,7 @@ const HomePage: NextPage = () => {
           </div>
         </div>
         {/* Image of myself */}
-        <div className="w-1/2 h-80 rounded-full relative">
+        <div className="hidden md:block w-1/2 h-80 rounded-full relative">
           <Image
             src={myself}
             alt="Image of myself on the landing page"

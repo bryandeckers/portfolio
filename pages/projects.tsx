@@ -17,6 +17,7 @@ const ProjectsPage: NextPage = () => {
           title="Waaiburg"
           description="The Waaiburg Webapp/App is a custom-made web application developed for The Waaiburg, an organization that supports young people in difficult home situations. This web app provides complete control over the associated mobile app, allowing The Waaiburg staff to manage functionality, user accounts, and gather valuable data to evaluate the app's effectiveness."
           image={waaiburg}
+          href="https://dewaaiburgapp.eu/"
         >
           <Icon icon="devicon:laravel" className="text-4xl" />
           <Icon icon="devicon:flutter" className="text-3xl" />

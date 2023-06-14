@@ -72,15 +72,14 @@ const ProjectDetailedPage: NextPage = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col items-center md:items-start gap-5">
+          <div className="flex flex-col relative w-full aspect-video items-center md:items-start gap-5">
             <Image
               src={project.image}
               alt={project.title}
-              width={1000}
-              height={500}
+              fill
             />
           </div>
-          <p className="text-lg">{project.description}</p>
+          <p className="text-lg text-justify">{project.description}</p>
         </div>
       </div>
     </main>

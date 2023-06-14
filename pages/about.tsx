@@ -32,7 +32,7 @@ const AboutPage: NextPage = () => {
         and knowledge in practical, real-world scenarios.
       </p>
       <p className="mb-5">
-        Outside of my studies, I find great satisfaction in working on my car.
+        Besides my studies, I find great satisfaction in working on my car.
         It&apos;s a hands-on hobby that allows me to explore my creative side
         and put my DIY skills to the test. From painting to various
         modifications, I&apos;ve invested time and effort in personalizing my

@@ -44,7 +44,7 @@ const HomePage: NextPage = () => {
               <Icon icon="fa-brands:github" className="text-2xl" />
             </Link>
             <Link
-              href="https://www.taskade.com/d/gnCzA8B1QYCckhpW?share=edit&edit=4vKCYuwG7NNkZgzw&as=list"
+              href="https://www.taskade.com/d/gnCzA8B1QYCckhpW?share=view&view=1oQzv2RsY5UPFsS6&as=list"
               target="_blank"
               rel="noopener"
             >

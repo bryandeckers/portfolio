@@ -39,7 +39,7 @@ const ContactPage: NextPage = () => {
           </legend>
           <textarea
             name="message"
-            className="w-full px-3 min-h-12 outline-none text-md italic text-gray-600 resize-none"
+            className="w-full px-3 h-32 outline-none text-md italic text-gray-600 resize-none"
             required
           ></textarea>
         </fieldset>

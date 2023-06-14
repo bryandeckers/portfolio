@@ -62,7 +62,7 @@ const ProjectDetailedPage: NextPage = () => {
         <div className="flex flex-col items-center md:items-start gap-10">
           <div className="flex flex-col items-center md:items-start gap-5">
             <h1 className="text-4xl font-bold">{project.title}</h1>
-            <p className="text-xl">{project.shortdescription}</p>
+            <p className="text-xl text-justify">{project.shortdescription}</p>
             <div className="flex flex-wrap gap-5">
               {project.technologies.map((technology) => (
                 <div key={technology} className="flex items-center gap-2">

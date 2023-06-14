@@ -2,7 +2,6 @@ import PageHeader from "@/components/PageHeader";
 import { NextPage } from "next";
 import Image from "next/image";
 
-import car from "../public/images/car.jpg";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 
@@ -43,8 +42,8 @@ const AboutPage: NextPage = () => {
         <h2 className="text-xl font-semibold">Here you can see my car</h2>
         <Icon icon="mdi:arrow-down-right" className="text-4xl mt-1" />
       </div>
-      <div className="h-1/2 mb-5">
-        <Image src={car} alt="picture of my car" />
+      <div className="w-full relative aspect-video mb-5">
+        <Image src="https://imagedelivery.net/Va3UupLTRw0IIfUBpZD4iw/106bf32f-d462-4c75-c8cd-b4ee51244300/public" alt="picture of my car" fill />
       </div>
       <p className="mb-5">
         In terms of coding, I&apos;ve developed proficiency in several languages

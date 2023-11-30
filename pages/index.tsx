@@ -43,13 +43,13 @@ const HomePage: NextPage = () => {
             >
               <Icon icon="fa-brands:github" className="text-2xl" />
             </Link>
-            <Link
+            {/* <Link
               href="https://www.taskade.com/d/gnCzA8B1QYCckhpW?share=view&view=1oQzv2RsY5UPFsS6&as=list"
               target="_blank"
               rel="noopener"
             >
               <Icon icon="logos:taskade" className="text-2xl" />
-            </Link>
+            </Link> */}
           </div>
         </div>
         {/* Image of myself */}

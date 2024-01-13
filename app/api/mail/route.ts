@@ -4,9 +4,9 @@ import sendMail from "../sendmail";
 export async function POST(req: NextRequest) {
   const formData = await req.formData();
 
-  const to = formData.get("to") as string;
+  const to = "bryan.deckers1@gmail.com"
   const from = formData.get("from") as string;
-  const subject = formData.get("subject") as string;
+  const subject = "Inzending van contactformulier";
   const content = formData.get("content") as string;
 
   // Store the data in KV

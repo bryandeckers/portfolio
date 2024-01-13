@@ -1,10 +1,11 @@
+"use client"
 import PageHeader from "@/components/PageHeader";
 import { Icon } from "@iconify/react";
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import myself from "../public/images/myself.png";
+import myself from "@/public/images/myself.png";
 
 const HomePage: NextPage = () => {
   return (

@@ -1,3 +1,4 @@
+"use client"
 import PageHeader from "@/components/PageHeader";
 import { NextPage } from "next";
 import Image from "next/image";

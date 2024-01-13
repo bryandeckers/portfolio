@@ -1,9 +1,10 @@
+"use client"
 import ProjectCard from "@/components/ProjectCard";
 import { Icon } from "@iconify/react";
 import { NextPage } from "next";
 
-import waaiburg from "../public/images/waaiburgdashboard.png";
-import dfk from "../public/images/dfkteams.png";
+import waaiburg from "@/public/images/waaiburgdashboard.png";
+import dfk from "@/public/images/dfkteams.png";
 import PageHeader from "@/components/PageHeader";
 
 // TODO: Open projects in detail when clicking them with more information such as screenshots of final result, my role in the project, etc

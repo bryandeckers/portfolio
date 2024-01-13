@@ -1,8 +1,9 @@
+"use client"
 import { FunctionComponent, useState } from "react";
 import Link from "next/link";
 import NavItem from "./NavItem";
 import Image from "next/image";
-import logo from "../public/images/bd-logo-black.png";
+import logo from "@/public/images/bd-logo-black.png";
 import { Icon } from "@iconify/react";
 
 const Navbar: FunctionComponent = () => {

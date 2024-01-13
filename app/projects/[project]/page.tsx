@@ -1,19 +1,15 @@
-import PageHeader from "@/components/PageHeader";
-import { Icon } from "@iconify/react";
-import { NextPage } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
+"use client"
+import { usePathname } from "next/navigation";
+import ProjectDetailed from "../ProjectDetailed";
 
-const ProjectDetailedPage: NextPage = () => {
-  const { query } = useRouter();
-
+const ProjectDetailedPage = () => {
   const projectData = {
     waaiburg: {
       title: "Waaiburg",
       shortdescription:
         "The Waaiburg Webapp/App is a custom-made web application developed for The Waaiburg, an organization that supports young people in difficult home situations. This web app provides complete control over the associated mobile app, allowing The Waaiburg staff to manage functionality, user accounts, and gather valuable data to evaluate the app's effectiveness.",
-      description: "The Waaiburg Webapp/App project involved the redevelopment of the existing web application and mobile app for The Waaiburg organization. The goal was to expand the functionality and enhance the user experience. To achieve this, we collaborated as a team of three, utilizing Laravel, Flutter, and TailwindCSS technologies. " + 
+      description:
+        "The Waaiburg Webapp/App project involved the redevelopment of the existing web application and mobile app for The Waaiburg organization. The goal was to expand the functionality and enhance the user experience. To achieve this, we collaborated as a team of three, utilizing Laravel, Flutter, and TailwindCSS technologies. " +
         "In my role within the project, along with my two fellow students, we successfully tackled various aspects of the development process. I took charge of creating the initial structure, designing the user interface, and implementing the front-end using Laravel Blade and TailwindCSS. Additionally, I played a crucial role in developing the back-end functionalities using Laravel, including the creation of controllers and APIs. " +
         "Collaborating closely, we were able to ensure code quality and continuous improvement. To accomplish this, we integrated SonarCloud, a code inspection tool, to regularly analyze and check the codebase for any potential issues. This allowed us to maintain high code standards and detect and address any vulnerabilities or bugs in a timely manner. " +
         "The final result of our collaborative efforts is a secure and robust web application built with Laravel. It provides a seamless integration with the associated Flutter-based mobile app, allowing users to access essential features and functionality. The web application has been thoroughly tested and is fully functional, while the expansion of the mobile app is planned for the upcoming year. " +
@@ -42,47 +38,34 @@ const ProjectDetailedPage: NextPage = () => {
         "TailwindCSS",
         "Figma",
       ],
-    }
-    
+    },
   };
 
-  const project = projectData[query.project as keyof typeof projectData];
+  const projectName = usePathname().split("/")[2];
 
-  if (!project?.title) {
+  console.log("projectName");
+  console.log(projectName);
+
+  const project = projectData[projectName as keyof typeof projectData];
+
+  if (!project) {
     return <div>Project not found</div>;
   }
 
   return (
-    <main className="container px-30 lg:px-60 mt-20">
-      <PageHeader title={project.title} noTitleText={true} />
-      <Link href="/projects" className="hover:underline">
-        Back to projects
-      </Link>
-      <div className="flex flex-col items-center md:items-start gap-20 mb-20 mt-5">
-        <div className="flex flex-col items-center md:items-start gap-10">
-          <div className="flex flex-col items-center md:items-start gap-5">
-            <h1 className="text-4xl font-bold">{project.title}</h1>
-            <p className="text-xl text-justify">{project.shortdescription}</p>
-            <div className="flex flex-wrap gap-5">
-              {project.technologies.map((technology) => (
-                <div key={technology} className="flex items-center gap-2">
-                  <Icon icon={"devicon:" + technology.toLowerCase()} />
-                  <p>{technology}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col relative w-full aspect-video items-center md:items-start gap-5">
-            <Image
-              src={project.image}
-              alt={project.title}
-              fill
-            />
-          </div>
-          <p className="text-lg text-justify">{project.description}</p>
-        </div>
-      </div>
-    </main>
+    project && (
+      <ProjectDetailed
+        project={
+          project as {
+            title: string;
+            shortdescription: string;
+            description: string;
+            image: string;
+            technologies: string[];
+          }
+        }
+      />
+    )
   );
 };
 

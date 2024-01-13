@@ -54,7 +54,7 @@ const ContactPage: NextPage = () => {
             }
 
             const formData = new FormData();
-            formData.append("from", formValues.email);
+            formData.append("email", formValues.email);
             formData.append("content", formValues.message);
 
             fetch("/api/mail", {

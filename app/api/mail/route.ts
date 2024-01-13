@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
   });
 
   // Return the responses as a JSON response
-  return new Response(JSON.stringify({ response }), {
+  return new Response(JSON.stringify(response), {
     headers: {
       "Content-Type": "application/json",
     },

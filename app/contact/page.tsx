@@ -14,9 +14,15 @@ const ContactPage: NextPage = () => {
     <main className="container px-30 lg:px-60 mt-20">
       <PageHeader title="Contact" />
 
-      <p className={`${errorMessage !== "" ? "block" : "hidden"} bg-[#b3124f] text-white p-5 rounded-lg`}>{errorMessage}</p>
+      <p
+        className={`${
+          errorMessage !== "" ? "block" : "hidden"
+        } bg-[#b3124f] text-white p-5 rounded-lg`}
+      >
+        {errorMessage}
+      </p>
 
-      <form className="flex flex-col gap-5 mt-14 mb-20">
+      <div className="flex flex-col gap-5 mt-14 mb-20">
         <fieldset className="relative border rounded-lg bg-white">
           <legend className="ml-5 px-2 text-gray-500 font-semibold">
             Email
@@ -71,7 +77,7 @@ const ContactPage: NextPage = () => {
         >
           Send Your Message
         </button>
-      </form>
+      </div>
     </main>
   );
 };

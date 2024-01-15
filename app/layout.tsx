@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,11 +10,6 @@ const montserrat = Montserrat({
   display: "swap",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: "BC Detailing",
-  description: "Business class detailing",
-};
 
 export default function RootLayout({
   children,

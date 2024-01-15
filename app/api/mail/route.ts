@@ -4,7 +4,7 @@ import sendMail from "../sendmail";
 export async function POST(req: NextRequest) {
   const formData = await req.formData();
 
-  const to = "info@bryandeckers.com"
+  const to = "bryan.deckers1@gmail.com"
   const from = "contact@bryandeckers.com";
   const subject = "Inzending van contactformulier";
   const email = formData.get("email") as string;

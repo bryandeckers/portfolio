@@ -2,6 +2,7 @@
 import PageHeader from "@/components/PageHeader";
 import { NextPage } from "next";
 import { useState } from "react";
+import { Icon } from "@iconify/react";
 
 const ContactPage: NextPage = () => {
   const [formValues, setFormValues] = useState({
@@ -11,16 +12,23 @@ const ContactPage: NextPage = () => {
 
   const [errorMessage, setErrorMessage] = useState("");
   return (
-    <main className="container px-30 lg:px-60 mt-20">
+    <main className="container mt-20">
       <PageHeader title="Contact" />
 
-      <p
+      <div
         className={`${
-          errorMessage !== "" ? "block" : "hidden"
-        } bg-[#b3124f] text-white p-5 rounded-lg`}
+          errorMessage !== "" ? "flex" : "hidden"
+        } bg-[#b3124f] text-white p-5 rounded-lg items-center justify-between`}
       >
-        {errorMessage}
-      </p>
+        <p>{errorMessage}</p>
+        <Icon
+          icon="mdi:close"
+          className="text-red-500 text-2xl hover:cursor-pointer"
+          onClick={() => {
+            setErrorMessage("");
+          }}
+        />
+      </div>
 
       <div className="flex flex-col gap-5 mt-14 mb-20">
         <fieldset className="relative border rounded-lg bg-white">

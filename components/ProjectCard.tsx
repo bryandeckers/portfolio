@@ -17,7 +17,7 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
   href,
 }) => {
   return (
-    <div className="flex flex-col border rounded-xl drop-shadow-md p-10 w-1/3">
+    <div className="flex flex-col border rounded-xl drop-shadow-md p-10">
       {/* project image */}
       <div className="">
         <Image src={image} alt="" className="rounded-lg" />

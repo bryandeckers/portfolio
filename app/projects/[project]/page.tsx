@@ -45,7 +45,7 @@ const ProjectDetailedPage = () => {
   const project = projectData[projectName as keyof typeof projectData];
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <div className="container mt-40 text-2xl font-semibold mb-20">Project not found</div>;
   }
 
   return (

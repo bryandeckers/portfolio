@@ -22,7 +22,6 @@ const ProjectDetailedPage = () => {
       shortdescription:
         "The Dartsfederatie Kempen Web Application project is a comprehensive solution created for Dartsfederatie Kempen, one of the largest, if not the largest, darts federations in the Kempen region. The goal was to develop a robust web application that enables them to efficiently manage and update their players, teams, and clubs, as well as schedule matches and input scores. This web application greatly streamlines their workflow, providing a user-friendly platform to enhance their administrative tasks.",
       description: [
-        "Dartsfederatie Kempen is widely recognized as one of the largest, if not the largest, darts federations in the Kempen region. With a remarkable membership base of approximately 1000 individuals and a consistent annual growth rate of around 20%, it stands as a testament to the popularity and enthusiasm for darts in the local community.",
         "To streamline their operations and enhance the overall experience for their members, the federation embarked on a mission to develop a sophisticated web application. The primary objective of this web application was to provide a comprehensive platform for managing various aspects of the federation's operations. This included the creation, editing, and deletion of players, teams, and clubs, allowing them to be seamlessly interconnected. By having a centralized system, the federation aimed to simplify administrative tasks and facilitate efficient communication among its members.",
         "Furthermore, the application needed to incorporate a robust competition system that would track and record match days for all the participating teams. This data would be crucial for generating individual rankings and creating an accurate leaderboard.",
         "To bring this ambitious project to life, our team leveraged the power of NextJS, a cutting-edge JavaScript framework known for its scalability and performance, along with the versatility of Tailwind CSS for styling. The backend infrastructure was built using Cloudflare, utilizing its Serverless architecture, workers, and key-value (KV) storage features. This combination allowed us to develop a dynamic and responsive web application that met the federation's requirements while ensuring optimal performance and reliability.",
@@ -42,9 +41,6 @@ const ProjectDetailedPage = () => {
   };
 
   const projectName = usePathname().split("/")[2];
-
-  console.log("projectName");
-  console.log(projectName);
 
   const project = projectData[projectName as keyof typeof projectData];
 

@@ -5,7 +5,7 @@ import { FunctionComponent } from "react";
 
 const Footer: FunctionComponent = () => {
   return (
-    <div className="py-10 text-customblack mt-auto w-full">
+    <div className="py-10 text-customblack w-full">
       <div className="container flex flex-col md:flex-row gap-10 md:gap-0 md:justify-between items-center">
         <p className="text-xl font-semibold">Bryan Deckers &copy; {new Date().getFullYear()}</p>
         <div className="flex gap-5">

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import PageHeader from "@/components/PageHeader";
 import { Icon } from "@iconify/react";
 import { NextPage } from "next";
@@ -9,12 +9,44 @@ import myself from "@/public/images/myself.png";
 
 const HomePage: NextPage = () => {
   return (
-    <main className="container px-30 lg:px-60 mt-40">
+    <main className="container px-30 lg:px-48 mt-32 mb-20">
       <PageHeader />
 
+      <div className="flex items-center justify-between">
+        <div className="w-full md:w-1/2">
+          <h1 className="text-5xl md:text-6xl font-bold mb-5">
+            Business owner & Full stack developer
+          </h1>
+          <h2>
+            Hey, I&apos;m Bryan Deckers, a passionate developer based in the
+            beautiful Limburg, Belgium
+            <Icon
+              icon="twemoji:flag-belgium"
+              className="mb-1 ml-2 text-2xl inline"
+            />
+          </h2>
+        </div>
+
+        <div className="hidden md:block w-1/4 h-80 rounded-full relative">
+          <Image
+            src={myself}
+            alt="Image of myself on the landing page"
+            priority={true}
+            fill={true}
+            className="object-top object-cover"
+          />
+        </div>
+      </div>
+
+      <h2 className="text-3xl font-semibold mt-20 mb-10 md:mb-5">Let me help you!</h2>
+      <div className="flex flex-col sm:flex-row items-center gap-5">
+        <Link href="/business" className="text-white bg-blue-600 px-6 py-2 rounded-lg hover:opacity-80">Business</Link>
+        <Link href="/about" className="">Personal</Link>
+      </div>
+
       {/* Hero section */}
-      <div className="flex gap-5 md:gap-32">
-        <div className="flex flex-col">
+      {/* <div className="flex gap-5 md:gap-24">
+        <div className="flex flex-col w-2/3">
           <div className="flex-grow">
             <h1 className="text-5xl md:text-6xl font-bold mb-5">Full stack developer</h1>
             <div className="">
@@ -28,7 +60,6 @@ const HomePage: NextPage = () => {
               </p>
             </div>
           </div>
-          {/* Github & LinkedIn & Taskade */}
           <div className="flex gap-5 mt-10">
             <Link
               href="https://www.linkedin.com/in/bryandeckers/"
@@ -44,17 +75,9 @@ const HomePage: NextPage = () => {
             >
               <Icon icon="fa-brands:github" className="text-2xl" />
             </Link>
-            {/* <Link
-              href="https://www.taskade.com/d/gnCzA8B1QYCckhpW?share=view&view=1oQzv2RsY5UPFsS6&as=list"
-              target="_blank"
-              rel="noopener"
-            >
-              <Icon icon="logos:taskade" className="text-2xl" />
-            </Link> */}
           </div>
         </div>
-        {/* Image of myself */}
-        <div className="hidden md:block w-1/2 h-80 rounded-full relative">
+        <div className="hidden md:block w-1/4 h-80 rounded-full relative">
           <Image
             src={myself}
             alt="Image of myself on the landing page"
@@ -64,7 +87,6 @@ const HomePage: NextPage = () => {
           />
         </div>
       </div>
-      {/* Tech stack */}
       <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-20 md:mb-5">
         <div className="flex gap-5 items-center justify-center md:justify-normal">
           <p className="text-lg font-bold">Tech&nbsp;Stack</p>
@@ -79,7 +101,8 @@ const HomePage: NextPage = () => {
           <Icon icon="devicon:python" className="text-4xl" />
           <Icon icon="devicon:figma" className="text-4xl" />
         </div>
-      </div>
+      </div> 
+      */}
     </main>
   );
 };

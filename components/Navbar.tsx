@@ -30,6 +30,7 @@ const Navbar: FunctionComponent = () => {
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-5 lg:gap-10 text-xl">
               <NavItem link="/" text="Home" />
+              <NavItem link="/business" text="Business" />
               <NavItem link="/about" text="About" />
               <NavItem link="/projects" text="Projects" />
               <NavItem link="/contact" text="Contact" />
@@ -41,6 +42,7 @@ const Navbar: FunctionComponent = () => {
             <div className="container flex justify-center items-center h-full">
               <ul className="flex flex-col items-center gap-5 text-xl">
                 <NavItem link="/" text="Home" onClick={toggleMenu} />
+                <NavItem link="/business" text="Business" onClick={toggleMenu} />
                 <NavItem link="/about" text="About" onClick={toggleMenu} />
                 <NavItem
                   link="/projects"

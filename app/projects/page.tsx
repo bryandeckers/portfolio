@@ -54,7 +54,7 @@ const ProjectsPage: NextPage = () => {
           title="Dartsfederatie Kempen"
           image={dfk}
           href="https://dartsfederatiekempen.be"
-          readMoreLink="/projects/dfk"
+          readMoreLink="/projects/dartsfederatiekempen"
           tags={["DESIGN", "DEVELOPMENT"]}
           description="A webapplication for a darts federation, digitalizing the competition and making it easier to manage."
         ></ProjectCard>

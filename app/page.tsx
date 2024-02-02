@@ -9,7 +9,7 @@ import myself from "@/public/images/myself.png";
 
 const HomePage: NextPage = () => {
   return (
-    <main className="container px-30 lg:px-48 mt-32 mb-20">
+    <main className="container px-30 lg:px-48 mt-32 mb-20 min-h-[calc(100vh-500px)]">
       <PageHeader />
 
       <div className="flex items-center justify-between">

@@ -11,7 +11,7 @@ export default function sendMail(
         personalizations: [
           {
             to: [to],
-            dkim_domain: "bcdetailing.be", // The value has to be the domain you added DKIM records to and where you're sending your email from
+            dkim_domain: "bryandeckers.com", // The value has to be the domain you added DKIM records to and where you're sending your email from
             dkim_selector: "mailchannels",
             dkim_private_key: process.env.DKIM_PRIVATE_KEY,
           },

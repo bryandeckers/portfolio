@@ -7,6 +7,8 @@ import waaiburg from "@/public/images/waaiburgdashboard.png";
 import dfk from "@/public/images/dfkteams.png";
 import simpelke from "@/public/images/simpelke.png";
 import bcdetailing from "@/public/images/bcdetailing.png";
+import rttf from "@/public/images/rttf.jpg";
+import busma from "@/public/images/newbusma.png";
 
 // TODO: Open projects in detail when clicking them with more information such as screenshots of final result, my role in the project, etc
 
@@ -26,6 +28,21 @@ const ProjectsPage: NextPage = () => {
         <p>Personal</p>
       </div> */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
+        <ProjectCard
+          title="Busma"
+          image={busma}
+          tags={["DESIGN", "DEVELOPMENT"]}
+          description="A platform that combines all the needs in order to manage events smoothly."
+          readMoreLink="/projects/busma"
+          href="https://busma.be/"
+        ></ProjectCard>
+        <ProjectCard
+          title="Race to the future"
+          image={rttf}
+          tags={["AI", "DEVELOPMENT", "IOT"]}
+          description="A fully autonomeous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model."
+          readMoreLink="/projects/racetothefuture"
+        ></ProjectCard>
         <ProjectCard
           title="'t Simpelke"
           image={simpelke}

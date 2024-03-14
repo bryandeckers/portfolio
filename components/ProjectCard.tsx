@@ -8,7 +8,7 @@ import Link from "next/link";
 type ProjectCardData = {
   title: string;
   image: StaticImageData;
-  readMoreLink: string;
+  readMoreLink?: string;
   tags: string[];
   description: string;
   href?: string;
@@ -23,10 +23,10 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col border rounded-xl drop-shadow-md p-10">
+    <div className="flex flex-col border rounded-xl drop-shadow-md p-10 ">
       {/* project image */}
-      <div className="">
-        <Image src={image} alt="" className="rounded-lg" />
+      <div className="h-48 relative">
+        <Image src={image} alt="" className="rounded-lg" layout="fill" objectFit="cover" />
       </div>
       <div className="flex items-center justify-between mt-5">
         <h2 className="text-2xl font-semibold">{title}</h2>
@@ -54,14 +54,16 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
       </div>
       <p className="mt-5">{description}</p>
       {/* read more link */}
-      <div className="flex flex-col mt-auto">
-        <Link
-          href={readMoreLink}
-          className="mt-5 px-4 py-2 rounded-md bg-customblack text-white w-fit"
-        >
-          Tell me more!
-        </Link>
-      </div>
+      {readMoreLink && (
+        <div className="flex flex-col mt-auto">
+          <Link
+            href={readMoreLink}
+            className="mt-5 px-4 py-2 rounded-md bg-customblack text-white w-fit"
+          >
+            Tell me more!
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

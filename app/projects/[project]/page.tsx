@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { usePathname } from "next/navigation";
 import ProjectDetailed from "../ProjectDetailed";
 
@@ -38,6 +38,56 @@ const ProjectDetailedPage = () => {
         "Figma",
       ],
     },
+    bcdetailing: {
+      title: "BC Detailing",
+      shortdescription:
+        "The BC Detailing Web Application project was developed for BC Detailing, a car detailing company based in Belgium. The goal was to create a comprehensive web application that would enable the company to manage their services, appointments, and customer data, while providing an intuitive and visually appealing platform for their clients.",
+      description: [],
+      image: "/images/bcdetailing.png",
+      technologies: [
+        "NextJS",
+        "TypeScript",
+        "TailwindCSS",
+        "Figma",
+        "Cloudflare",
+      ],
+    },
+    simpelke: {
+      title: "Simpelke",
+      shortdescription:
+        "The Simpelke Web Application project was developed for Simpelke, a local business based in Belgium. The goal was to create a comprehensive web application that would enable the company to manage their services, appointments, and customer data, while providing an intuitive and visually appealing platform for their clients.",
+      description: [],
+      image: "/images/simpelke.png",
+      technologies: [
+        "NextJS",
+        "TypeScript",
+        "TailwindCSS",
+        "Figma",
+        "Cloudflare",
+      ],
+    },
+    racetothefuture: {
+      title: "Race to the Future",
+      shortdescription:
+        "A fully autonomeous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model.",
+      description: [],
+      image: "/images/rttf.jpg",
+      technologies: ["Python", "OpenCV", "TensorFlow", "Keras"],
+    },
+    busma: {
+      title: "Busma",
+      shortdescription:
+        "A platform that combines all the needs in order to manage events smoothly.",
+      description: [],
+      image: "/images/newbusma.png",
+      technologies: [
+        "NextJS",
+        "TypeScript",
+        "TailwindCSS",
+        "Figma",
+        "Cloudflare",
+      ],
+    },
   };
 
   const projectName = usePathname().split("/")[2];
@@ -45,7 +95,11 @@ const ProjectDetailedPage = () => {
   const project = projectData[projectName as keyof typeof projectData];
 
   if (!project) {
-    return <div className="container mt-40 text-2xl font-semibold mb-20">Project not found</div>;
+    return (
+      <div className="container mt-40 text-2xl font-semibold mb-20">
+        Project not found
+      </div>
+    );
   }
 
   return (

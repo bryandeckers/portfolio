@@ -42,21 +42,6 @@ const HomePage = () => {
         <Icon icon="mdi:chevron-down" className="text-3xl" />
       </Link>
 
-      {/* <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-20 md:mb-5">
-        <div className="flex gap-5 items-center justify-center md:justify-normal">
-          <p className="text-lg font-bold">Tech&nbsp;Stack</p>
-          <p className="text-2xl hidden md:block">|</p>
-        </div>
-        <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
-          <Icon icon="devicon:nextjs-wordmark" className="text-7xl" />
-          <Icon icon="devicon:tailwindcss" className="text-5xl" />
-          <Icon icon="devicon:react" className="text-4xl" />
-          <Icon icon="devicon:typescript" className="text-4xl" />
-          <Icon icon="devicon:laravel" className="text-4xl" />
-          <Icon icon="devicon:python" className="text-4xl" />
-          <Icon icon="devicon:figma" className="text-4xl" />
-        </div>
-      </div>  */}
       <section className="mt-40" id="projects">
         <h2 className="text-3xl font-semibold mb-5">Featured Projects</h2>
         <div className="flex flex-col lg:flex-row items-center gap-10">
@@ -86,28 +71,38 @@ const HomePage = () => {
 
       <section className="mt-40" id="aboutme">
         <h2 className="text-3xl font-semibold mb-5">About me</h2>
-        <div className="flex flex-col lg:flex-row items-center gap-10">
-          <ProjectCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
-            href="https://github.com"
-            tags={["React", "Next.js", "TailwindCSS"]}
-            image={myself2}
-          />
-          <ProjectCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
-            href="https://github.com"
-            tags={["React", "Next.js", "TailwindCSS"]}
-            image={myself2}
-          />
-          <ProjectCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
-            href="https://github.com"
-            tags={["React", "Next.js", "TailwindCSS"]}
-            image={myself2}
-          />
+        <div className="">
+          <p>
+            I am Bryan Deckers, a full stack developer with a passion for the
+            web. I am currently self-employed alongside my studies in Applied
+            Computer Science.
+          </p>
+          <p>
+            I love to learn new things both professionally and in my free time
+          </p>
+          <p>
+            If you want to get in touch with me or like the work I do feel free
+            to contact me!
+          </p>
+          <Link href="/about" className="">
+            Read more
+          </Link>
+        </div>
+
+        <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-20 md:mb-5">
+          <div className="flex gap-5 items-center justify-center md:justify-normal">
+            <p className="text-lg font-bold">Tech&nbsp;Stack</p>
+            <p className="text-2xl hidden md:block">|</p>
+          </div>
+          <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
+            <p><Icon icon="devicon:nextjs-wordmark" className="text-7xl" />NextJS</p>
+            <Icon icon="devicon:tailwindcss" className="text-5xl" />
+            <Icon icon="devicon:react" className="text-4xl" />
+            <Icon icon="devicon:typescript" className="text-4xl" />
+            <Icon icon="devicon:laravel" className="text-4xl" />
+            <Icon icon="devicon:python" className="text-4xl" />
+            <Icon icon="devicon:figma" className="text-4xl" />
+          </div>
         </div>
       </section>
     </main>

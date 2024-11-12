@@ -1,20 +1,20 @@
 "use client";
-import PageHeader from "@/components/PageHeader";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import myself from "@/public/images/myself.png";
+// import myself from "@/public/images/myself.png";
+import myself2 from "@/public/images/myself2.jpeg";
+import Link from "next/link";
+import ProjectCard from "@/components/ProjectCard";
 
 const HomePage = () => {
-    return (
-        <main className="container px-30 lg:px-48 mt-32 mb-20 min-h-[calc(100vh-500px)]">
-      <PageHeader />
-
-      <div className="flex items-center justify-between">
-        <div className="w-full md:w-1/2">
+  return (
+    <main className="container mt-32 mb-20 min-h-[calc(100vh-500px)]">
+      <section className="flex flex-col gap-10 lg:gap-10 lg:flex-row lg:items-center lg:justify-between">
+        <div className="w-1/2 lg:w-1/3">
           <h1 className="text-5xl md:text-6xl font-bold mb-5">
-            Business owner & Full stack developer
+            Full stack developer
           </h1>
-          <h2>
+          <h2 className="">
             Hey, I&apos;m Bryan Deckers, a passionate developer based in the
             beautiful Limburg, Belgium
             <Icon
@@ -24,25 +24,25 @@ const HomePage = () => {
           </h2>
         </div>
 
-        <div className="hidden md:block w-1/4 h-80 rounded-full relative">
+        <div className="w-1/2 relative">
           <Image
-            src={myself}
+            src={myself2}
             alt="Image of myself on the landing page"
             priority={true}
-            fill={true}
-            className="object-top object-cover"
+            className="rounded-lg"
           />
         </div>
-      </div>
+      </section>
 
-      {/* <h2 className="text-3xl font-semibold mt-20 mb-10 md:mb-5">Let me help you!</h2>
-      <div className="flex flex-col sm:flex-row items-center gap-5">
-        <Link href="/business" className="text-white bg-blue-600 px-6 py-2 rounded-lg hover:opacity-80">Business</Link>
-        <Link href="/about" className="">Personal</Link>
-      </div> */}
+      <Link
+        href="#projects"
+        className="flex items-center gap-3 mt-32 mb-10 md:mb-5"
+      >
+        <h2 className="text-xl font-semibold">Checkout some of my projects</h2>
+        <Icon icon="mdi:chevron-down" className="text-3xl" />
+      </Link>
 
-      {/*
-      <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-20 md:mb-5">
+      {/* <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-20 md:mb-5">
         <div className="flex gap-5 items-center justify-center md:justify-normal">
           <p className="text-lg font-bold">Tech&nbsp;Stack</p>
           <p className="text-2xl hidden md:block">|</p>
@@ -56,10 +56,62 @@ const HomePage = () => {
           <Icon icon="devicon:python" className="text-4xl" />
           <Icon icon="devicon:figma" className="text-4xl" />
         </div>
-      </div> 
-      */}
+      </div>  */}
+      <section className="mt-40" id="projects">
+        <h2 className="text-3xl font-semibold mb-5">Featured Projects</h2>
+        <div className="flex flex-col lg:flex-row items-center gap-10">
+          <ProjectCard
+            title="Project 1"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
+            href="https://github.com"
+            tags={["React", "Next.js", "TailwindCSS"]}
+            image={myself2}
+          />
+          <ProjectCard
+            title="Project 1"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
+            href="https://github.com"
+            tags={["React", "Next.js", "TailwindCSS"]}
+            image={myself2}
+          />
+          <ProjectCard
+            title="Project 1"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
+            href="https://github.com"
+            tags={["React", "Next.js", "TailwindCSS"]}
+            image={myself2}
+          />
+        </div>
+      </section>
+
+      <section className="mt-40" id="aboutme">
+        <h2 className="text-3xl font-semibold mb-5">About me</h2>
+        <div className="flex flex-col lg:flex-row items-center gap-10">
+          <ProjectCard
+            title="Project 1"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
+            href="https://github.com"
+            tags={["React", "Next.js", "TailwindCSS"]}
+            image={myself2}
+          />
+          <ProjectCard
+            title="Project 1"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
+            href="https://github.com"
+            tags={["React", "Next.js", "TailwindCSS"]}
+            image={myself2}
+          />
+          <ProjectCard
+            title="Project 1"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
+            href="https://github.com"
+            tags={["React", "Next.js", "TailwindCSS"]}
+            image={myself2}
+          />
+        </div>
+      </section>
     </main>
-    )
-}
+  );
+};
 
 export default HomePage;

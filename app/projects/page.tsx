@@ -1,6 +1,5 @@
-"use client";
 import ProjectCard from "@/components/ProjectCard";
-import { NextPage } from "next";
+import { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 
 import waaiburg from "@/public/images/waaiburgdashboard.png";
@@ -10,9 +9,13 @@ import bcdetailing from "@/public/images/bcdetailing.png";
 import rttf from "@/public/images/rttf.jpg";
 import busma from "@/public/images/newbusma.png";
 
+export const metadata: Metadata = {
+  title: 'Projects - Bryan Deckers',
+}
+
 // TODO: Open projects in detail when clicking them with more information such as screenshots of final result, my role in the project, etc
 
-const ProjectsPage: NextPage = () => {
+const ProjectsPage = () => {
   return (
     <main className="container mt-40">
       <PageHeader title="Projects" />

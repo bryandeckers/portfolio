@@ -1,8 +1,12 @@
-"use client";
-import { usePathname } from "next/navigation";
+
+import { Metadata } from "next";
 import ProjectDetailed from "../ProjectDetailed";
 
-const ProjectDetailedPage = () => {
+export const metadata: Metadata = {
+  title: 'Projects - Bryan Deckers',
+}
+
+const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
   const projectData = {
     waaiburg: {
       title: "Waaiburg",
@@ -90,7 +94,7 @@ const ProjectDetailedPage = () => {
     },
   };
 
-  const projectName = usePathname().split("/")[2];
+  const projectName = params.project;
 
   const project = projectData[projectName as keyof typeof projectData];
 

@@ -1,3 +1,4 @@
+"use client"
 import PageHeader from "@/components/PageHeader";
 import { Icon } from "@iconify/react";
 import Image from "next/image";

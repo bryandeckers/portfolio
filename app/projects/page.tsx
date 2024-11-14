@@ -43,7 +43,7 @@ const ProjectsPage = () => {
           title="Race to the future"
           image={rttf}
           tags={["AI", "DEVELOPMENT", "IOT"]}
-          description="A fully autonomeous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model."
+          description="A fully autonomous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model."
           readMoreLink="/projects/racetothefuture"
         ></ProjectCard>
         <ProjectCard

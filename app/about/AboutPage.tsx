@@ -79,7 +79,7 @@ const AboutPage = () => {
 
         <div>
           <h2 className="text-2xl font-semibold mt-20 mb-3">Work</h2>
-          <p>I have been studying Computer science for 5 years now.</p>
+          <p>I have been working since March 2021.</p>
           <div className="flex flex-col gap-10 mt-5">
             <div className="border px-4 py-6 rounded-lg">
               <p className="text-xl font-semibold">

@@ -73,7 +73,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     racetothefuture: {
       title: "Race to the Future",
       shortdescription:
-        "A fully autonomeous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model.",
+        "A fully autonomous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model.",
       description: [],
       image: "/images/rttf.jpg",
       technologies: ["Python", "OpenCV", "TensorFlow", "Keras"],

@@ -37,14 +37,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      <Link
-        href="#projects"
-        className="flex items-center gap-3 mt-32 mb-10 md:mb-5"
-      >
-        <h2 className="text-xl font-semibold">Checkout some of my projects</h2>
-        <Icon icon="mdi:chevron-down" className="text-3xl" />
-      </Link>
-
       <section className="mt-40" id="projects">
         <h2 className="text-3xl font-semibold mb-5">Featured Projects</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch gap-10">

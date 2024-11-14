@@ -66,7 +66,7 @@ const AboutPage = () => {
               <p>
                 My thesis is still featured on their{" "}
                 <Link
-                  href="https://www.handelsschoolhasselt.be/nl/studie/6-informaticabeheer"
+                  href="https://www.handelsschoolhasselt.be/nl/studie/5-6-applicatie-en-databeheer"
                   target="_blank"
                   className="hover:underline text-blue-500"
                 >

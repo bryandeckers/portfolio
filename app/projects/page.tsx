@@ -8,6 +8,7 @@ import simpelke from "@/public/images/simpelke.png";
 import bcdetailing from "@/public/images/bcdetailing.png";
 import rttf from "@/public/images/rttf.jpg";
 import busma from "@/public/images/newbusma.png";
+import internship from "@/public/images/internship.png";
 
 export const metadata: Metadata = {
   title: 'Projects - Bryan Deckers',
@@ -20,9 +21,9 @@ const ProjectsPage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
         <ProjectCard
           title="Internship project - Make it fly branded Doodle"
-          image={busma}
+          image={internship}
           tags={["DESIGN", "DEVELOPMENT"]}
-          description=""
+          description="A webapplication to simplify finding a timeslot that fits everyone"
           readMoreLink="/projects/internship"
         ></ProjectCard>
         <ProjectCard

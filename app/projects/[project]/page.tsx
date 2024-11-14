@@ -14,7 +14,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
         "",
       description:
         "",
-      image: "/images/waaiburgdashboard.png",
+      image: "/images/internship.png",
       technologies: ["NextJS", "Typescript", "Figma", "TailwindCSS"],
     },
     waaiburg: {

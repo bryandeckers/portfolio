@@ -8,14 +8,17 @@ import ProjectCard from "@/components/ProjectCard";
 import waaiburg from "@/public/images/waaiburgdashboard.png";
 import dfk from "@/public/images/dfkteams.png";
 import internship from "@/public/images/internship.png";
+import { useTranslations } from "next-intl";
 
 const HomePage = () => {
+  const t = useTranslations('HomePage');
   return (
     <main className="container mt-32 mb-20 min-h-[calc(100vh-500px)]">
       <section className="flex flex-col gap-10 lg:gap-10 lg:flex-row lg:items-center lg:justify-between">
         <div className="w-full lg:w-1/3">
           <h1 className="text-5xl md:text-6xl font-bold mb-10 lg:mb-5">
             Full stack developer
+            {t('title')}
           </h1>
           <h2 className="">
             Hey, I&apos;m Bryan Deckers, a passionate developer based in the

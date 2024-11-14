@@ -26,7 +26,7 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
     <div className="flex flex-col border rounded-xl drop-shadow-md p-10 ">
       {/* project image */}
       <div className="h-48 relative">
-        <Image src={image} alt="" className="rounded-lg" layout="fill" objectFit="cover" />
+        <Image src={image} alt="" className="rounded-lg object-cover" fill />
       </div>
       <div className="flex items-center justify-between mt-5">
         <h2 className="text-2xl font-semibold">{title}</h2>

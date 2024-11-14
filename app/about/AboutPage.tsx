@@ -8,7 +8,7 @@ const AboutPage = () => {
     <main className="container mt-40 mb-5">
       <PageHeader title="About" />
 
-      <section className="">
+      <section className="w-full lg:w-1/2">
         <div className="mb-10">
           <p>
             I am Bryan Deckers, a full stack developer with a passion for the web.
@@ -19,14 +19,22 @@ const AboutPage = () => {
             I love to learn new things both professionally and in my free time
           </p>
         </div>
-        <Link
-          href="/CVBryanDeckers.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-customblack text-white px-4 py-2 rounded-md"
-        >
-          Download Resume
-        </Link>
+        <div className="flex flex-col lg:flex-row gap-5 items-center">
+          <Link
+            href="/CVBryanDeckers.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-customblack text-white px-4 py-2 rounded-md"
+          >
+            Download Resume
+          </Link>
+          <Link
+            href="/contact"
+            className="bg-blue-700 text-white px-4 py-2 rounded-md"
+          >
+            Contact me
+          </Link>
+        </div>
       </section>
 
       <section className="flex flex-col lg:flex-row items-center gap-10 lg:gap-40 mb-10">

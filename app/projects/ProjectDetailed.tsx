@@ -29,7 +29,13 @@ const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
         <div className="flex flex-col items-center md:items-start gap-10">
           <div className="flex flex-col items-center md:items-start gap-5">
             <h1 className="text-4xl font-bold">{project.title}</h1>
-            <p className="text-xl text-justify">{project.shortdescription}</p>
+            <div className="text-xl text-justify">
+              {Array.isArray(project.shortdescription)
+                ? project.shortdescription.map((text, index) => (
+                  <p key={index} dangerouslySetInnerHTML={{ __html: text }} className="mb-4"></p>
+                ))
+                : <p dangerouslySetInnerHTML={{ __html: project.shortdescription }} />}
+            </div>
             <div className="flex flex-wrap gap-5">
               {project.technologies.map((technology) => (
                 <div key={technology} className="flex items-center gap-2">
@@ -42,7 +48,13 @@ const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
           <div className="flex flex-col relative w-full aspect-video items-center md:items-start gap-5">
             <Image src={project.image} alt={project.title} fill />
           </div>
-          <p className="text-lg text-justify">{project.description}</p>
+          <div className="text-lg text-justify">
+            {Array.isArray(project.description)
+              ? project.description.map((text, index) => (
+                <p key={index} dangerouslySetInnerHTML={{ __html: text }} className="mb-4"></p>
+              ))
+              : <p dangerouslySetInnerHTML={{ __html: project.description }} />}
+          </div>
         </div>
       </div>
     </main>

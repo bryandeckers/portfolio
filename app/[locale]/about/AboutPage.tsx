@@ -53,7 +53,7 @@ const AboutPage = () => {
 
       <section className="flex flex-col lg:flex-row items-center gap-10 lg:gap-40 mb-10">
         <div className="w-1/2">
-          <h2 className="text-2xl font-semibold mt-20 mb-3">{t('education')}</h2>
+          <h2 className="text-2xl font-semibold mt-10 lg:mt-20 mb-3">{t('education')}</h2>
           <p>{t('educationexperience')}</p>
           <div className="flex flex-col gap-10 mt-5">
             <div className="border px-4 py-6 rounded-lg">

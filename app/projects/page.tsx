@@ -8,29 +8,24 @@ import simpelke from "@/public/images/simpelke.png";
 import bcdetailing from "@/public/images/bcdetailing.png";
 import rttf from "@/public/images/rttf.jpg";
 import busma from "@/public/images/newbusma.png";
+import internship from "@/public/images/internship.png";
 
 export const metadata: Metadata = {
   title: 'Projects - Bryan Deckers',
 }
 
-// TODO: Open projects in detail when clicking them with more information such as screenshots of final result, my role in the project, etc
-
 const ProjectsPage = () => {
   return (
     <main className="container mt-40">
       <PageHeader title="Projects" />
-      {/* <h2 className="text-xl font-medium mb-10">
-        Here you can see some of my work
-      </h2>
-
-      <div className="flex flex-col sm:flex-row gap-5 items-center mb-10">
-        <p className="px-6 py-2 rounded-lg hover:bg-blue-700 bg-white text-black hover:text-white hover:cursor-pointer transition duration-300">
-          Business
-        </p>
-        <p>School</p>
-        <p>Personal</p>
-      </div> */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
+        <ProjectCard
+          title="Internship project - Make it fly branded Doodle"
+          image={internship}
+          tags={["DESIGN", "DEVELOPMENT"]}
+          description="A webapplication to simplify finding a timeslot that fits everyone"
+          readMoreLink="/projects/internship"
+        ></ProjectCard>
         <ProjectCard
           title="Busma"
           image={busma}
@@ -43,7 +38,7 @@ const ProjectsPage = () => {
           title="Race to the future"
           image={rttf}
           tags={["AI", "DEVELOPMENT", "IOT"]}
-          description="A fully autonomeous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model."
+          description="A fully autonomous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model."
           readMoreLink="/projects/racetothefuture"
         ></ProjectCard>
         <ProjectCard

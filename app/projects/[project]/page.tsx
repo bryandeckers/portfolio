@@ -8,6 +8,15 @@ export const metadata: Metadata = {
 
 const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
   const projectData = {
+    internship: {
+      title: "Internship project - Make it fly branded Doodle",
+      shortdescription:
+        "",
+      description:
+        "",
+      image: "/images/internship.png",
+      technologies: ["NextJS", "Typescript", "Figma", "TailwindCSS"],
+    },
     waaiburg: {
       title: "Waaiburg",
       shortdescription:
@@ -73,7 +82,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     racetothefuture: {
       title: "Race to the Future",
       shortdescription:
-        "A fully autonomeous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model.",
+        "A fully autonomous car that can drive around a track and avoid obstacles. It uses a camera in combination with a trained AI model.",
       description: [],
       image: "/images/rttf.jpg",
       technologies: ["Python", "OpenCV", "TensorFlow", "Keras"],

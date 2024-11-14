@@ -52,7 +52,7 @@ const AboutPage = () => {
       </section>
 
       <section className="flex flex-col lg:flex-row items-center gap-10 lg:gap-40 mb-10">
-        <div>
+        <div className="w-1/2">
           <h2 className="text-2xl font-semibold mt-20 mb-3">{t('education')}</h2>
           <p>{t('educationexperience')}</p>
           <div className="flex flex-col gap-10 mt-5">
@@ -98,7 +98,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div>
+        <div className="w-1/2">
           <h2 className="text-2xl font-semibold mt-10 lg:mt-20 mb-3">{t('work')}</h2>
           <p>{t('workexperience')}</p>
           <div className="flex flex-col gap-10 mt-5">

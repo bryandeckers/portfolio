@@ -10,8 +10,8 @@ const HomePage = () => {
   return (
     <main className="container mt-32 mb-20 min-h-[calc(100vh-500px)]">
       <section className="flex flex-col gap-10 lg:gap-10 lg:flex-row lg:items-center lg:justify-between">
-        <div className="w-1/2 lg:w-1/3">
-          <h1 className="text-5xl md:text-6xl font-bold mb-5">
+        <div className="w-full lg:w-1/3">
+          <h1 className="text-5xl md:text-6xl font-bold mb-10 lg:mb-5">
             Full stack developer
           </h1>
           <h2 className="">
@@ -24,7 +24,7 @@ const HomePage = () => {
           </h2>
         </div>
 
-        <div className="w-1/2 relative">
+        <div className="w-full lg:w-1/2 relative">
           <Image
             src={myself2}
             alt="Image of myself on the landing page"

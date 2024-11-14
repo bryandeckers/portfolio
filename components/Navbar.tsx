@@ -1,10 +1,11 @@
 "use client"
 import { FunctionComponent, useState } from "react";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import NavItem from "./NavItem";
 import Image from "next/image";
 import logo from "@/public/images/bd-logo-black.png";
 import { Icon } from "@iconify/react";
+import { useTranslations } from "next-intl";
 
 const Navbar: FunctionComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,8 @@ const Navbar: FunctionComponent = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const t = useTranslations('Navbar');
 
   return (
     <header className="mt-5">
@@ -29,11 +32,11 @@ const Navbar: FunctionComponent = () => {
           </nav>
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-5 lg:gap-10 text-xl">
-              <NavItem link="/" text="Home" />
-              <NavItem link="/projects/internship" text="Internship" />
-              <NavItem link="/about" text="About" />
-              <NavItem link="/projects" text="Projects" />
-              <NavItem link="/contact" text="Contact" />
+              <NavItem link="/" text={t('home')} />
+              <NavItem link="/projects/internship" text={t('internship')} />
+              <NavItem link="/about" text={t('about')} />
+              <NavItem link="/projects" text={t('projects')} />
+              <NavItem link="/contact" text={t('contact')} />
             </ul>
           </nav>
         </div>
@@ -41,15 +44,15 @@ const Navbar: FunctionComponent = () => {
           <nav className="fixed inset-0 bg-white bg-opacity-90 text-gray-900 transition-transform duration-300 transform">
             <div className="container flex justify-center items-center h-full">
               <ul className="flex flex-col items-center gap-5 text-xl">
-                <NavItem link="/" text="Home" onClick={toggleMenu} />
-                <NavItem link="/projects/internship" text="Internship" onClick={toggleMenu} />
-                <NavItem link="/about" text="About" onClick={toggleMenu} />
+                <NavItem link="/" text={t('home')} onClick={toggleMenu} />
+                <NavItem link="/projects/internship" text={t('internship')} onClick={toggleMenu} />
+                <NavItem link="/about" text={t('about')} onClick={toggleMenu} />
                 <NavItem
                   link="/projects"
-                  text="Projects"
+                  text={t('projects')}
                   onClick={toggleMenu}
                 />
-                <NavItem link="/contact" text="Contact" onClick={toggleMenu} />
+                <NavItem link="/contact" text={t('contact')} onClick={toggleMenu} />
               </ul>
             </div>
           </nav>

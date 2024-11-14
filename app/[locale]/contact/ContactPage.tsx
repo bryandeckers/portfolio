@@ -2,6 +2,7 @@
 import PageHeader from "@/components/PageHeader";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import { useTranslations } from "next-intl";
 
 const ContactPage = () => {
   const [formValues, setFormValues] = useState({
@@ -10,14 +11,15 @@ const ContactPage = () => {
   });
 
   const [errorMessage, setErrorMessage] = useState("");
+  const t = useTranslations('ContactPage');
+
   return (
     <main className="container mt-20">
       <PageHeader title="Contact" />
 
       <div
-        className={`${
-          errorMessage !== "" ? "flex" : "hidden"
-        } bg-[#b3124f] text-white p-5 rounded-lg items-center justify-between`}
+        className={`${errorMessage !== "" ? "flex" : "hidden"
+          } bg-[#b3124f] text-white p-5 rounded-lg items-center justify-between`}
       >
         <p>{errorMessage}</p>
         <Icon
@@ -46,7 +48,7 @@ const ContactPage = () => {
         </fieldset>
         <fieldset className="relative border rounded-lg bg-white">
           <legend className="ml-5 px-2 text-gray-500 font-semibold">
-            Message
+            {t('message')}
           </legend>
           <textarea
             name="message"
@@ -82,7 +84,7 @@ const ContactPage = () => {
             setErrorMessage("");
           }}
         >
-          Send Your Message
+          {t('submit')}
         </button>
       </div>
     </main>

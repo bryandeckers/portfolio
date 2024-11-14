@@ -9,15 +9,18 @@ import bcdetailing from "@/public/images/bcdetailing.png";
 import rttf from "@/public/images/rttf.jpg";
 import busma from "@/public/images/newbusma.png";
 import internship from "@/public/images/internship.png";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: 'Projects - Bryan Deckers',
 }
 
 const ProjectsPage = () => {
+  const t = useTranslations('ProjectPage');
+
   return (
     <main className="container mt-40">
-      <PageHeader title="Projects" />
+      <PageHeader title={t('projects')} />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
         <ProjectCard
           title="Internship project - Make it fly branded Doodle"

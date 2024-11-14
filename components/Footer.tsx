@@ -1,6 +1,6 @@
 "use client"
 import { Icon } from "@iconify/react";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import { FunctionComponent } from "react";
 
 const Footer: FunctionComponent = () => {

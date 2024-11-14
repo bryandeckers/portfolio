@@ -1,46 +1,26 @@
 "use client";
 import PageHeader from "@/components/PageHeader";
 import { Icon } from "@iconify/react";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import myself2 from "@/public/images/myself2.jpeg";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const AboutPage = () => {
+  const t = useTranslations('AboutPage');
   return (
     <main className="container mt-40 mb-5">
-      <PageHeader title="About" />
+      <PageHeader title={t('about')} />
 
       <section className="">
         <div className="flex justify-between mb-10 gap-20">
           <div className="w-full lg:w-1/2">
             <div className="flex flex-col justify-between mb-5">
               <div className="mb-5">
-                <p>
-                  I am Bryan Deckers, a full stack developer with a passion for the web.
-                  I specialize in both front-end and back-end development. Currently,
-                  I am self-employed, which allows me to pursue my professional projects alongside
-                  my studies in Applied Computer Science at university.
-                </p>
-                <p className="mt-5">
-                  My journey into the world of development began several years ago, and over time,
-                  I&apos;ve honed my skills in technologies such as JavaScript, TypeScript, React, Node.js,
-                  and databases. I thrive on building dynamic, efficient, and scalable applications that
-                  solve real-world problems. I love to stay updated with the latest trends in tech and
-                  continuously work on improving my craft.
-                </p>
-                <p className="mt-5">
-                  Learning is something I am deeply passionate about, and I dedicate a significant
-                  amount of my time to expanding my knowledge. Whether it&apos;s tackling new challenges
-                  in coding or picking up new skills outside of tech, I&apos;m always eager to grow and
-                  push myself further. In my free time, I also enjoy reading, exploring new technologies,
-                  and working on cars.
-                </p>
-                <p className="mt-5">
-                  I believe in the power of collaboration and enjoy working with like-minded individuals
-                  who share my enthusiasm for creating impactful projects. If you would like to connect,
-                  discuss potential opportunities, or simply chat about technology, feel free to reach out
-                  to me. I am always open to new collaborations and partnerships!
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t.raw('aboutpart1') }}></p>
+                <p className="mt-5" dangerouslySetInnerHTML={{ __html: t.raw('aboutpart2') }}></p>
+                <p className="mt-5" dangerouslySetInnerHTML={{ __html: t.raw('aboutpart3') }}></p>
+                <p className="mt-5" dangerouslySetInnerHTML={{ __html: t.raw('aboutpart4') }}></p>
               </div>
               <div className="flex flex-col lg:flex-row gap-5 items-center">
                 <Link
@@ -49,13 +29,13 @@ const AboutPage = () => {
                   rel="noopener noreferrer"
                   className="bg-customblack text-white px-4 py-2 rounded-md"
                 >
-                  Download Resume
+                  {t('downloadresume')}
                 </Link>
                 <Link
                   href="/contact"
                   className="bg-blue-700 text-white px-4 py-2 rounded-md"
                 >
-                  Contact me
+                  {t('contact')}
                 </Link>
               </div>
             </div>
@@ -73,19 +53,18 @@ const AboutPage = () => {
 
       <section className="flex flex-col lg:flex-row items-center gap-10 lg:gap-40 mb-10">
         <div>
-          <h2 className="text-2xl font-semibold mt-20 mb-3">Education</h2>
-          <p>I have been studying Computer science for 5 years now.</p>
+          <h2 className="text-2xl font-semibold mt-20 mb-3">{t('education')}</h2>
+          <p>{t('educationexperience')}</p>
           <div className="flex flex-col gap-10 mt-5">
             <div className="border px-4 py-6 rounded-lg">
               <p className="text-xl font-semibold">
-                Bachelor&apos;s Degree in Applied Computer Science (Toegepaste
-                Informatica)
+                {t('education1title')}
               </p>
               <p className="text-gray-500 mt-3 mb-5">
-                Thomas More Geel 2021 - Present
+                {t('education1time')}
               </p>
               <p>
-                Here I learned React/NextJS, Flutter, Python, Java, Laravel, Javascript and Typescript, designing/prototyping using Figma.
+                {t('education1description')}
               </p>
               <p className="mt-3">
                 These projects were for real clients or companies some of which are featured
@@ -99,12 +78,12 @@ const AboutPage = () => {
 
             <div className="border px-4 py-6 rounded-lg mb-5">
               <p className="text-xl font-semibold">
-                Secondary in IT Management (Informaticabeheer)
+                {t('education2title')}
               </p>
               <p className="text-gray-500 mt-3 mb-5">
-                Provinciale Handelsschool Hasselt 2019 - 2021
+                {t('education2time')}
               </p>
-              <p>Here I learned the basics of HTML, CSS, Javascript, C++ and C#</p>
+              <p>{t('education2description')}</p>
               <p>
                 My thesis is still featured on their{" "}
                 <Link
@@ -120,32 +99,30 @@ const AboutPage = () => {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mt-10 lg:mt-20 mb-3">Work</h2>
-          <p>I have been working since March 2021.</p>
+          <h2 className="text-2xl font-semibold mt-10 lg:mt-20 mb-3">{t('work')}</h2>
+          <p>{t('workexperience')}</p>
           <div className="flex flex-col gap-10 mt-5">
             <div className="border px-4 py-6 rounded-lg">
               <p className="text-xl font-semibold">
-                Student self-employed web design
+                {t('work1title')}
               </p>
               <p className="text-gray-500 mt-3 mb-5">
-                Bryan Deckers March 2023 - Present
+                {t('work1time')}
               </p>
-              <p>Finding customers, understanding and solving their goals and needs</p>
-              <p className="mt-3">Collaborate with other student independents to complete larger projects</p>
+              <p>{t('work1description1')}</p>
+              <p className="mt-3">{t('work1description2')}</p>
               <p className="mt-3">Projects for non-profit organizations, small and large companies, examples can be <Link href="/projects" className="text-blue-500">here</Link></p>
             </div>
 
             <div className="border px-4 py-6 rounded-lg mb-5">
               <p className="text-xl font-semibold">
-                Logistics employee (job student)
+                {t('work2title')}
               </p>
               <p className="text-gray-500 mt-3 mb-5">
-                PK Express (UPS) March 2021 - Present
+                {t('work2time')}
               </p>
-              <p>Loading and unloading trucks</p>
-              <p>
-                Learning how to work within a company
-              </p>
+              <p>{t('work2description1')}</p>
+              <p>{t('work2description2')}</p>
             </div>
           </div>
         </div>
@@ -155,7 +132,7 @@ const AboutPage = () => {
       <section className="mt-10">
         <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
-            <p className="text-lg font-bold">Tech</p>
+            <p className="text-lg font-bold">{t('tech')}</p>
             <p className="text-2xl hidden md:block">|</p>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
@@ -173,7 +150,7 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
-            <p className="text-lg font-bold">Tools</p>
+            <p className="text-lg font-bold">{t('tools')}</p>
             <p className="text-2xl hidden md:block">|</p>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
@@ -186,7 +163,7 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
-            <p className="text-lg font-bold">Database</p>
+            <p className="text-lg font-bold">{t('database')}</p>
             <p className="text-2xl hidden md:block">|</p>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">

@@ -5,6 +5,9 @@ import Image from "next/image";
 import myself2 from "@/public/images/myself2.jpeg";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
+import waaiburg from "@/public/images/waaiburgdashboard.png";
+import dfk from "@/public/images/dfkteams.png";
+import internship from "@/public/images/internship.png";
 
 const HomePage = () => {
   return (
@@ -44,28 +47,30 @@ const HomePage = () => {
 
       <section className="mt-40" id="projects">
         <h2 className="text-3xl font-semibold mb-5">Featured Projects</h2>
-        <div className="flex flex-col lg:flex-row items-center gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch gap-10">
           <ProjectCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
-            href="https://github.com"
-            tags={["React", "Next.js", "TailwindCSS"]}
-            image={myself2}
-          />
+            title="Internship project - Make it fly branded Doodle"
+            image={internship}
+            tags={["DESIGN", "DEVELOPMENT"]}
+            description="A webapplication to simplify finding a timeslot that fits everyone"
+            readMoreLink="/projects/internship"
+          ></ProjectCard>
           <ProjectCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
-            href="https://github.com"
-            tags={["React", "Next.js", "TailwindCSS"]}
-            image={myself2}
-          />
+            title="Waaiburg"
+            image={waaiburg}
+            href="https://dewaaiburgapp.eu/"
+            readMoreLink="/projects/waaiburg"
+            tags={["DESIGN", "DEVELOPMENT"]}
+            description="A dashboard for a care home, with a lot of features to make the work of the employees easier."
+          ></ProjectCard>
           <ProjectCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at ante."
-            href="https://github.com"
-            tags={["React", "Next.js", "TailwindCSS"]}
-            image={myself2}
-          />
+            title="Dartsfederatie Kempen"
+            image={dfk}
+            href="https://dartsfederatiekempen.be"
+            readMoreLink="/projects/dartsfederatiekempen"
+            tags={["DESIGN", "DEVELOPMENT"]}
+            description="A webapplication for a darts federation, digitalizing the competition and making it easier to manage."
+          ></ProjectCard>
         </div>
       </section>
 

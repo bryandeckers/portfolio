@@ -29,7 +29,7 @@ const AboutPage = () => {
         </Link>
       </section>
 
-      <section className="flex items-center gap-40 mb-10">
+      <section className="flex flex-col lg:flex-row items-center gap-10 lg:gap-40 mb-10">
         <div>
           <h2 className="text-2xl font-semibold mt-20 mb-3">Education</h2>
           <p>I have been studying Computer science for 5 years now.</p>
@@ -78,7 +78,7 @@ const AboutPage = () => {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mt-20 mb-3">Work</h2>
+          <h2 className="text-2xl font-semibold mt-10 lg:mt-20 mb-3">Work</h2>
           <p>I have been working since March 2021.</p>
           <div className="flex flex-col gap-10 mt-5">
             <div className="border px-4 py-6 rounded-lg">
@@ -111,7 +111,7 @@ const AboutPage = () => {
 
       {/* Technologies */}
       <section className="mt-10">
-        <div className="flex flex-col lg:flex-row gap-14 md:mb-5">
+        <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
             <p className="text-lg font-bold">Tech</p>
             <p className="text-2xl hidden md:block">|</p>
@@ -129,7 +129,7 @@ const AboutPage = () => {
             <Icon icon="devicon:prisma" className="text-4xl" />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-14 md:mb-5">
+        <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
             <p className="text-lg font-bold">Tools</p>
             <p className="text-2xl hidden md:block">|</p>
@@ -142,7 +142,7 @@ const AboutPage = () => {
             <Icon icon="devicon:postman" className="text-4xl" />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-14 md:mb-5">
+        <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
             <p className="text-lg font-bold">Database</p>
             <p className="text-2xl hidden md:block">|</p>

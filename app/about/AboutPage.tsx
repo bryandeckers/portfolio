@@ -23,15 +23,15 @@ const AboutPage = () => {
                 </p>
                 <p className="mt-5">
                   My journey into the world of development began several years ago, and over time,
-                  I've honed my skills in technologies such as JavaScript, TypeScript, React, Node.js,
+                  I&apos;ve honed my skills in technologies such as JavaScript, TypeScript, React, Node.js,
                   and databases. I thrive on building dynamic, efficient, and scalable applications that
                   solve real-world problems. I love to stay updated with the latest trends in tech and
                   continuously work on improving my craft.
                 </p>
                 <p className="mt-5">
                   Learning is something I am deeply passionate about, and I dedicate a significant
-                  amount of my time to expanding my knowledge. Whether it's tackling new challenges
-                  in coding or picking up new skills outside of tech, I'm always eager to grow and
+                  amount of my time to expanding my knowledge. Whether it&apos;s tackling new challenges
+                  in coding or picking up new skills outside of tech, I&apos;m always eager to grow and
                   push myself further. In my free time, I also enjoy reading, exploring new technologies,
                   and working on cars.
                 </p>

@@ -87,7 +87,7 @@ const HomePage = () => {
               </p>
               <p className="mt-5">
                 My journey into the world of development began several years ago, and over time,
-                I've honed my skills in technologies such as JavaScript, TypeScript, React, Node.js,
+                I&apos;ve honed my skills in technologies such as JavaScript, TypeScript, React, Node.js,
                 and databases. I thrive on building dynamic, efficient, and scalable applications that
                 solve real-world problems. I love to stay updated with the latest trends in tech and
                 continuously work on improving my craft.

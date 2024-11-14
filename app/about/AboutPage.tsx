@@ -16,30 +16,30 @@ const AboutPage = () => {
             <div className="flex flex-col justify-between mb-5">
               <div className="mb-5">
                 <p>
-                  I am Bryan Deckers, a full stack developer with a passion for the web.
-                  I specialize in both front-end and back-end development. Currently,
-                  I am self-employed, which allows me to pursue my professional projects alongside
-                  my studies in Applied Computer Science at university.
+                  I am <strong>Bryan Deckers</strong>, a <strong>full stack developer</strong> with a passion for the <strong>web</strong>.
+                  I specialize in both <strong>front-end</strong> and <strong>back-end development</strong>. Currently,
+                  I am <strong>self-employed</strong>, which allows me to pursue my professional projects alongside
+                  my studies in <strong>Applied Computer Science</strong> at university.
                 </p>
                 <p className="mt-5">
                   My journey into the world of development began several years ago, and over time,
-                  I&apos;ve honed my skills in technologies such as JavaScript, TypeScript, React, Node.js,
-                  and databases. I thrive on building dynamic, efficient, and scalable applications that
-                  solve real-world problems. I love to stay updated with the latest trends in tech and
+                  I&apos;ve honed my skills in technologies such as <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React</strong>, <strong>Node.js</strong>,
+                  and <strong>databases</strong>. I thrive on building <strong>dynamic</strong>, <strong>efficient</strong>, and <strong>scalable applications</strong> that
+                  solve real-world problems. I love to stay updated with the latest <strong>trends in tech</strong> and
                   continuously work on improving my craft.
                 </p>
                 <p className="mt-5">
-                  Learning is something I am deeply passionate about, and I dedicate a significant
+                  <strong>Learning</strong> is something I am deeply passionate about, and I dedicate a significant
                   amount of my time to expanding my knowledge. Whether it&apos;s tackling new challenges
-                  in coding or picking up new skills outside of tech, I&apos;m always eager to grow and
-                  push myself further. In my free time, I also enjoy reading, exploring new technologies,
-                  and working on cars.
+                  in coding or picking up new skills outside of tech, I&apos;m always eager to <strong>grow</strong> and
+                  push myself further. In my free time, I also enjoy <strong>reading</strong>, exploring new <strong>technologies</strong>,
+                  and working on <strong>cars</strong>.
                 </p>
                 <p className="mt-5">
-                  I believe in the power of collaboration and enjoy working with like-minded individuals
-                  who share my enthusiasm for creating impactful projects. If you would like to connect,
+                  I believe in the power of <strong>collaboration</strong> and enjoy working with like-minded individuals
+                  who share my enthusiasm for creating <strong>impactful projects</strong>. If you would like to connect,
                   discuss potential opportunities, or simply chat about technology, feel free to reach out
-                  to me. I am always open to new collaborations and partnerships!
+                  to me. I am always open to new <strong>collaborations</strong> and <strong>partnerships</strong>!
                 </p>
               </div>
               <div className="flex flex-col lg:flex-row gap-5 items-center">

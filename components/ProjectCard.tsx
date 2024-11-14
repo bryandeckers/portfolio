@@ -4,6 +4,7 @@ import { FunctionComponent } from "react";
 import { Icon } from "@iconify/react";
 import Image, { StaticImageData } from "next/image";
 import { Link } from '@/i18n/routing';
+import { useTranslations } from "next-intl";
 
 type ProjectCardData = {
   title: string;
@@ -22,6 +23,8 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
   tags,
   description,
 }) => {
+  const t = useTranslations('ProjectPage');
+
   return (
     <div className="flex flex-col border rounded-xl drop-shadow-md p-10 h-full">
       {/* project image */}
@@ -54,7 +57,7 @@ const ProjectCard: FunctionComponent<ProjectCardData> = ({
             href={readMoreLink}
             className="mt-5 px-4 py-2 rounded-md bg-customblack text-white w-fit"
           >
-            Tell me more!
+            {t('tellmemore')}
           </Link>
         </div>
       )}

@@ -17,15 +17,20 @@
         "contact": "Neem contact op"
     },
     "AboutPage": {
-        "title": "Hello world! nl",
-        "about": "Go to the about page nl"
+        "downloadresume": "Download CV",
+        "contact": "Neem contact op",
+        "education": "Opleiding",
+        "educationexperience": "Ik studeer al 5 jaar Informatica.",
+        "tech": "Technologieën",
+        "tools": "Tools",
+        "database": "Database"
     },
     "ContactPage": {
-        "title": "Hello world! nl",
-        "about": "Go to the about page nl"
+        "message": "Bericht",
+        "submit": "Stuur je bericht"
     },
     "ProjectPage": {
-        "title": "Hello world! nl",
-        "about": "Go to the about page nl"
+        "projects": "Projecten",
+        "tellmemore": "Vertel me meer!"
     }
 }

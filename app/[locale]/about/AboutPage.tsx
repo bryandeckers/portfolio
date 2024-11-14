@@ -4,8 +4,10 @@ import { Icon } from "@iconify/react";
 import { Link } from '@/i18n/routing';
 import myself2 from "@/public/images/myself2.jpeg";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const AboutPage = () => {
+  const t = useTranslations('AboutPage');
   return (
     <main className="container mt-40 mb-5">
       <PageHeader title="About" />
@@ -49,13 +51,13 @@ const AboutPage = () => {
                   rel="noopener noreferrer"
                   className="bg-customblack text-white px-4 py-2 rounded-md"
                 >
-                  Download Resume
+                  {t('downloadresume')}
                 </Link>
                 <Link
                   href="/contact"
                   className="bg-blue-700 text-white px-4 py-2 rounded-md"
                 >
-                  Contact me
+                  {t('contact')}
                 </Link>
               </div>
             </div>
@@ -73,8 +75,8 @@ const AboutPage = () => {
 
       <section className="flex flex-col lg:flex-row items-center gap-10 lg:gap-40 mb-10">
         <div>
-          <h2 className="text-2xl font-semibold mt-20 mb-3">Education</h2>
-          <p>I have been studying Computer science for 5 years now.</p>
+          <h2 className="text-2xl font-semibold mt-20 mb-3">{t('education')}</h2>
+          <p>{t('educationexperience')}</p>
           <div className="flex flex-col gap-10 mt-5">
             <div className="border px-4 py-6 rounded-lg">
               <p className="text-xl font-semibold">
@@ -155,7 +157,7 @@ const AboutPage = () => {
       <section className="mt-10">
         <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
-            <p className="text-lg font-bold">Tech</p>
+            <p className="text-lg font-bold">{t('tech')}</p>
             <p className="text-2xl hidden md:block">|</p>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
@@ -173,7 +175,7 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
-            <p className="text-lg font-bold">Tools</p>
+            <p className="text-lg font-bold">{t('tools')}</p>
             <p className="text-2xl hidden md:block">|</p>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
@@ -186,7 +188,7 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col lg:flex-row gap-14 mb-20 lg:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
-            <p className="text-lg font-bold">Database</p>
+            <p className="text-lg font-bold">{t('database')}</p>
             <p className="text-2xl hidden md:block">|</p>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">

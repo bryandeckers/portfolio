@@ -1,10 +1,10 @@
 {
     "Navbar": {
-        "Home": "Home",
+        "home": "Home",
         "internship": "Internship",
         "about": "About",
         "projects": "Projects",
-        "Contact": "Contact"
+        "contact": "Contact"
     },
     "HomePage": {
         "landingheader": "Full stack developer",
@@ -17,15 +17,20 @@
         "contact": "Contact me"
     },
     "AboutPage": {
-        "title": "Hello world! nl",
-        "about": "Go to the about page nl"
+        "downloadresume": "Download Resume",
+        "contact": "Contact me",
+        "education": "Education",
+        "educationexperience": "I have been studying Computer science for 5 years now.",
+        "tech": "Tech",
+        "tools": "Tools",
+        "database": "Database"
     },
     "ContactPage": {
-        "title": "Hello world! nl",
-        "about": "Go to the about page nl"
+        "message": "Message",
+        "submit": "Send Your Message"
     },
     "ProjectPage": {
-        "title": "Hello world! nl",
-        "about": "Go to the about page nl"
+        "projects": "Projects",
+        "tellmemore": "Tell me more!"
     }
 }

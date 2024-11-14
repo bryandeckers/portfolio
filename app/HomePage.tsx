@@ -76,23 +76,44 @@ const HomePage = () => {
 
       <section className="mt-40" id="aboutme">
         <h2 className="text-3xl font-semibold mb-5">About me</h2>
-        <div className="mb-5 w-full lg:w-1/2">
-          <p>
-            I am Bryan Deckers, a full stack developer with a passion for the
-            web. I am currently self-employed alongside my studies in Applied
-            Computer Science.
-          </p>
-          <p>
-            I love to learn new things both professionally and in my free time
-          </p>
-          <p>
-            If you want to get in touch with me or like the work I do feel free
-            to contact me!
-          </p>
+        <div className="flex flex-col lg:flex-row justify-between gap-10">
+          <div className="flex flex-col justify-between mb-5 w-full lg:w-1/2">
+            <div>
+              <p>
+                I am Bryan Deckers, a full stack developer with a passion for the web.
+                I specialize in both front-end and back-end development. Currently,
+                I am self-employed, which allows me to pursue my professional projects alongside
+                my studies in Applied Computer Science at university.
+              </p>
+              <p className="mt-5">
+                My journey into the world of development began several years ago, and over time,
+                I've honed my skills in technologies such as JavaScript, TypeScript, React, Node.js,
+                and databases. I thrive on building dynamic, efficient, and scalable applications that
+                solve real-world problems. I love to stay updated with the latest trends in tech and
+                continuously work on improving my craft.
+              </p>
+            </div>
+            <div className="flex flex-col lg:flex-row gap-5 items-center">
+              <Link href="/about" className="bg-customblack text-white px-4 py-2 rounded-md">
+                Read more
+              </Link>
+              <Link
+                href="/contact"
+                className="bg-blue-700 text-white px-4 py-2 rounded-md"
+              >
+                Contact me
+              </Link>
+            </div>
+          </div>
+          <div className="w-full lg:w-1/3 relative">
+            <Image
+              src={myself2}
+              alt="Image of myself on the landing page"
+              priority={true}
+              className="rounded-2xl"
+            />
+          </div>
         </div>
-        <Link href="/about" className="bg-blue-500 text-white px-2 py-1 rounded">
-          Read more
-        </Link>
 
         {/* <div className="flex flex-col lg:flex-row lg:justify-center gap-14 mt-24 mb-20 md:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">

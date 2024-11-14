@@ -2,38 +2,72 @@
 import PageHeader from "@/components/PageHeader";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import myself2 from "@/public/images/myself2.jpeg";
+import Image from "next/image";
 
 const AboutPage = () => {
   return (
     <main className="container mt-40 mb-5">
       <PageHeader title="About" />
 
-      <section className="w-full lg:w-1/2">
-        <div className="mb-10">
-          <p>
-            I am Bryan Deckers, a full stack developer with a passion for the web.
-            I am currently self-employed alongside my studies in Applied Computer
-            Science.
-          </p>
-          <p>
-            I love to learn new things both professionally and in my free time
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row gap-5 items-center">
-          <Link
-            href="/CVBryanDeckers.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-customblack text-white px-4 py-2 rounded-md"
-          >
-            Download Resume
-          </Link>
-          <Link
-            href="/contact"
-            className="bg-blue-700 text-white px-4 py-2 rounded-md"
-          >
-            Contact me
-          </Link>
+      <section className="">
+        <div className="flex justify-between mb-10 gap-20">
+          <div className="w-full lg:w-1/2">
+            <div className="flex flex-col justify-between mb-5">
+              <div className="mb-5">
+                <p>
+                  I am Bryan Deckers, a full stack developer with a passion for the web.
+                  I specialize in both front-end and back-end development. Currently,
+                  I am self-employed, which allows me to pursue my professional projects alongside
+                  my studies in Applied Computer Science at university.
+                </p>
+                <p className="mt-5">
+                  My journey into the world of development began several years ago, and over time,
+                  I've honed my skills in technologies such as JavaScript, TypeScript, React, Node.js,
+                  and databases. I thrive on building dynamic, efficient, and scalable applications that
+                  solve real-world problems. I love to stay updated with the latest trends in tech and
+                  continuously work on improving my craft.
+                </p>
+                <p className="mt-5">
+                  Learning is something I am deeply passionate about, and I dedicate a significant
+                  amount of my time to expanding my knowledge. Whether it's tackling new challenges
+                  in coding or picking up new skills outside of tech, I'm always eager to grow and
+                  push myself further. In my free time, I also enjoy reading, exploring new technologies,
+                  and working on cars.
+                </p>
+                <p className="mt-5">
+                  I believe in the power of collaboration and enjoy working with like-minded individuals
+                  who share my enthusiasm for creating impactful projects. If you would like to connect,
+                  discuss potential opportunities, or simply chat about technology, feel free to reach out
+                  to me. I am always open to new collaborations and partnerships!
+                </p>
+              </div>
+              <div className="flex flex-col lg:flex-row gap-5 items-center">
+                <Link
+                  href="/CVBryanDeckers.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-customblack text-white px-4 py-2 rounded-md"
+                >
+                  Download Resume
+                </Link>
+                <Link
+                  href="/contact"
+                  className="bg-blue-700 text-white px-4 py-2 rounded-md"
+                >
+                  Contact me
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 relative">
+            <Image
+              src={myself2}
+              alt="Image of myself on the landing page"
+              priority={true}
+              className="rounded-xl"
+            />
+          </div>
         </div>
       </section>
 

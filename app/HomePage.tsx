@@ -71,7 +71,7 @@ const HomePage = () => {
 
       <section className="mt-40" id="aboutme">
         <h2 className="text-3xl font-semibold mb-5">About me</h2>
-        <div className="">
+        <div className="mb-5 w-full lg:w-1/2">
           <p>
             I am Bryan Deckers, a full stack developer with a passion for the
             web. I am currently self-employed alongside my studies in Applied
@@ -84,18 +84,18 @@ const HomePage = () => {
             If you want to get in touch with me or like the work I do feel free
             to contact me!
           </p>
-          <Link href="/about" className="">
-            Read more
-          </Link>
         </div>
+        <Link href="/about" className="bg-blue-500 text-white px-2 py-1 rounded">
+          Read more
+        </Link>
 
-        <div className="flex flex-col lg:flex-row gap-14 mt-24 mb-20 md:mb-5">
+        {/* <div className="flex flex-col lg:flex-row lg:justify-center gap-14 mt-24 mb-20 md:mb-5">
           <div className="flex gap-5 items-center justify-center md:justify-normal">
             <p className="text-lg font-bold">Tech&nbsp;Stack</p>
             <p className="text-2xl hidden md:block">|</p>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap gap-14 justify-center md:justify-start items-center">
-            <p><Icon icon="devicon:nextjs-wordmark" className="text-7xl" />NextJS</p>
+            <Icon icon="devicon:nextjs-wordmark" className="text-7xl" />
             <Icon icon="devicon:tailwindcss" className="text-5xl" />
             <Icon icon="devicon:react" className="text-4xl" />
             <Icon icon="devicon:typescript" className="text-4xl" />
@@ -103,7 +103,7 @@ const HomePage = () => {
             <Icon icon="devicon:python" className="text-4xl" />
             <Icon icon="devicon:figma" className="text-4xl" />
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );

@@ -8,6 +8,15 @@ export const metadata: Metadata = {
 
 const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
   const projectData = {
+    internship: {
+      title: "Internship project - Make it fly branded Doodle",
+      shortdescription:
+        "",
+      description:
+        "",
+      image: "/images/waaiburgdashboard.png",
+      technologies: ["NextJS", "Typescript", "Figma", "TailwindCSS"],
+    },
     waaiburg: {
       title: "Waaiburg",
       shortdescription:

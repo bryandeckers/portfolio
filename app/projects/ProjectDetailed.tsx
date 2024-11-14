@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FunctionComponent } from "react";
 
 interface ProjectDetailedProps {
-  project : {
+  project: {
     title: string;
     shortdescription: string;
     description: string;
@@ -16,12 +16,13 @@ interface ProjectDetailedProps {
 }
 
 const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
-    project,
+  project,
 }) => {
   return (
     <main className="container px-30 lg:px-60 mt-20">
       <PageHeader title={project.title} noTitleText={true} />
-      <Link href="/projects" className="hover:underline">
+      <Link href="/projects" className="flex items-center hover:underline">
+        <Icon icon="mdi:chevron-left" className="text-2xl" />
         Back to projects
       </Link>
       <div className="flex flex-col items-center md:items-start gap-20 mb-20 mt-5">

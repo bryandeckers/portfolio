@@ -1,5 +1,30 @@
 {
+    "Navbar": {
+        "home": "Home",
+        "internship": "Stage",
+        "about": "Over",
+        "projects": "Projecten",
+        "contact": "Contact"
+    },
     "HomePage": {
+        "landingheader": "Full stack ontwikkelaar",
+        "landingtext": "Hey, ik ben Bryan Deckers, een gepassioneerde ontwikkelaar uit het mooie Limburg, België",
+        "featured": "Uitgelichte Projecten",
+        "about": "Over mij",
+        "abouttext1": "Ik ben Bryan Deckers, een full stack ontwikkelaar met een passie voor het web. Ik ben gespecialiseerd in zowel front-end als back-end ontwikkeling. Momenteel ben ik zelfstandig, wat me de mogelijkheid biedt om mijn professionele projecten naast mijn studie Toegepaste Informatica aan de universiteit na te streven.",
+        "abouttext2": "Mijn reis in de wereld van ontwikkeling begon enkele jaren geleden, en in de loop van de tijd heb ik mijn vaardigheden aangescherpt in technologieën zoals JavaScript, TypeScript, React, Node.js en databases. Ik geniet ervan om dynamische, efficiënte en schaalbare applicaties te bouwen die echte problemen oplossen. Ik blijf graag op de hoogte van de nieuwste trends in technologie en werk voortdurend aan het verbeteren van mijn vakmanschap.",
+        "readmore": "Lees meer",
+        "contact": "Neem contact op"
+    },
+    "AboutPage": {
+        "title": "Hello world! nl",
+        "about": "Go to the about page nl"
+    },
+    "ContactPage": {
+        "title": "Hello world! nl",
+        "about": "Go to the about page nl"
+    },
+    "ProjectPage": {
         "title": "Hello world! nl",
         "about": "Go to the about page nl"
     }

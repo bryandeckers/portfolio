@@ -1,7 +1,7 @@
 "use client";
 import PageHeader from "@/components/PageHeader";
 import { Icon } from "@iconify/react";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import myself2 from "@/public/images/myself2.jpeg";
 import Image from "next/image";
 

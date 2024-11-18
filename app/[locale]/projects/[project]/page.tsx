@@ -127,7 +127,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
 
   if (!project) {
     return (
-      <div className="container mt-40 text-2xl font-semibold mb-20">
+      <div className="container px-10 lg:px-0  mt-40 text-2xl font-semibold mb-20">
         Project not found
       </div>
     );

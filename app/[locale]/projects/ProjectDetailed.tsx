@@ -19,7 +19,7 @@ const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
   project,
 }) => {
   return (
-    <main className="container px-30 lg:px-60 mt-20">
+    <main className="container px-10 lg:px-0  px-30 lg:px-60 mt-20">
       <PageHeader title={project.title} noTitleText={true} />
       <Link href="/projects" className="flex items-center hover:underline">
         <Icon icon="mdi:chevron-left" className="text-2xl" />

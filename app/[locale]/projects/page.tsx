@@ -21,7 +21,7 @@ const ProjectsPage = () => {
   const t = useTranslations('ProjectPage');
 
   return (
-    <main className="container mt-40">
+    <main className="container px-10 lg:px-0  mt-40">
       <PageHeader title={t('projects')} />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
         <ProjectCard

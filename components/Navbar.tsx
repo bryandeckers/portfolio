@@ -18,7 +18,7 @@ const Navbar: FunctionComponent = () => {
 
   return (
     <header className="mt-5">
-      <div className="container relative z-10">
+      <div className="container px-10 lg:px-0 relative z-10">
         <div className="flex justify-between items-center font-bold ">
           <Link href="/" className="text-xl w-20">
             <Image src={logo} alt="Logo" />

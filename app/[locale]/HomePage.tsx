@@ -12,7 +12,7 @@ import { useTranslations } from "next-intl";
 const HomePage = () => {
   const t = useTranslations('HomePage');
   return (
-    <main className="container mt-32 mb-20 min-h-[calc(100vh-500px)]">
+    <main className="container px-10 lg:px-0 mt-32 mb-20 min-h-[calc(100vh-500px)]">
       <section className="flex flex-col gap-10 lg:gap-10 lg:flex-row lg:items-center lg:justify-between">
         <div className="w-full lg:w-1/3">
           <h1 className="text-5xl md:text-6xl font-bold mb-10 lg:mb-5">
@@ -66,7 +66,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="mt-40" id="aboutme">
+      <section className="mt-20 lg:mt-40" id="aboutme">
         <h2 className="text-3xl font-semibold mb-5">{t('about')}</h2>
         <div className="flex flex-col lg:flex-row justify-between gap-10">
           <div className="flex flex-col justify-between mb-5 w-full lg:w-1/2">
@@ -78,7 +78,7 @@ const HomePage = () => {
                 {t('abouttext2')}
               </p>
             </div>
-            <div className="flex flex-col lg:flex-row gap-5 items-center">
+            <div className="flex flex-col lg:flex-row gap-5 mt-10 lg:mt-0 items-center">
               <Link href="/about" className="bg-customblack text-white px-4 py-2 rounded-md">
                 {t('readmore')}
               </Link>

@@ -19,7 +19,7 @@ const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
   project,
 }) => {
   return (
-    <main className="container px-30 lg:px-60 mt-20">
+    <main className="container px-10 lg:px-0  px-30 lg:px-60 mt-20">
       <PageHeader title={project.title} noTitleText={true} />
       <Link href="/projects" className="flex items-center hover:underline">
         <Icon icon="mdi:chevron-left" className="text-2xl" />
@@ -39,14 +39,21 @@ const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
             <div className="flex flex-wrap gap-5">
               {project.technologies.map((technology) => (
                 <div key={technology} className="flex items-center gap-2">
-                  <Icon icon={"devicon:" + technology.toLowerCase()} />
+                  <Icon icon={"devicon:" + technology.toLowerCase().replaceAll(" ", "")} />
                   <p>{technology}</p>
                 </div>
               ))}
             </div>
           </div>
           <div className="flex flex-col relative w-full aspect-video items-center md:items-start gap-5">
-            <Image src={project.image} alt={project.title} fill />
+            <div className="relative w-full aspect-video p-5 bg-gray-100 border-2 border-gray-300 rounded-md shadow-lg">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="rounded-md object-cover"
+              />
+            </div>
           </div>
           <div className="text-lg text-justify">
             {Array.isArray(project.description)

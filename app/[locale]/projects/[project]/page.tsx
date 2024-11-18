@@ -17,6 +17,24 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
       image: "/images/internship.png",
       technologies: ["NextJS", "Typescript", "Figma", "TailwindCSS"],
     },
+    togaether: {
+      title: "Demo Fabric - Togaether",
+      shortdescription:
+        "",
+      description:
+        "",
+      image: "/images/togaether.png",
+      technologies: ["Microsoft Fabric", "Apache Spark"],
+    },
+    bpmn: {
+      title: "BPMN - Netropolix",
+      shortdescription:
+        "",
+      description:
+        "",
+      image: "/images/netropolix.png",
+      technologies: [],
+    },
     waaiburg: {
       title: "Waaiburg",
       shortdescription:
@@ -109,7 +127,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
 
   if (!project) {
     return (
-      <div className="container mt-40 text-2xl font-semibold mb-20">
+      <div className="container px-10 lg:px-0  mt-40 text-2xl font-semibold mb-20">
         Project not found
       </div>
     );

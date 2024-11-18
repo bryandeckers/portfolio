@@ -9,11 +9,11 @@ import { useTranslations } from "next-intl";
 const AboutPage = () => {
   const t = useTranslations('AboutPage');
   return (
-    <main className="container mt-40 mb-5">
+    <main className="container px-10 lg:px-0 mt-40 mb-5">
       <PageHeader title={t('about')} />
 
       <section className="">
-        <div className="flex justify-between mb-10 gap-20">
+        <div className="flex flex-col lg:flex-row justify-between mb-10 gap-20">
           <div className="w-full lg:w-1/2">
             <div className="flex flex-col justify-between mb-5">
               <div className="mb-5">
@@ -22,7 +22,7 @@ const AboutPage = () => {
                 <p className="mt-5" dangerouslySetInnerHTML={{ __html: t.raw('aboutpart3') }}></p>
                 <p className="mt-5" dangerouslySetInnerHTML={{ __html: t.raw('aboutpart4') }}></p>
               </div>
-              <div className="flex flex-col lg:flex-row gap-5 items-center">
+              <div className="flex flex-col lg:flex-row gap-5 mt-10 lg:mt-0 items-center">
                 <Link
                   href="/CVBryanDeckers.pdf"
                   target="_blank"
@@ -52,8 +52,8 @@ const AboutPage = () => {
       </section>
 
       <section className="flex flex-col lg:flex-row items-center gap-10 lg:gap-40 mb-10">
-        <div>
-          <h2 className="text-2xl font-semibold mt-20 mb-3">{t('education')}</h2>
+        <div className="w-full lg:w-1/2">
+          <h2 className="text-2xl font-semibold mt-10 lg:mt-20 mb-3">{t('education')}</h2>
           <p>{t('educationexperience')}</p>
           <div className="flex flex-col gap-10 mt-5">
             <div className="border px-4 py-6 rounded-lg">
@@ -98,7 +98,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div>
+        <div className="w-full lg:w-1/2">
           <h2 className="text-2xl font-semibold mt-10 lg:mt-20 mb-3">{t('work')}</h2>
           <p>{t('workexperience')}</p>
           <div className="flex flex-col gap-10 mt-5">

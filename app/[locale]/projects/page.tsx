@@ -8,6 +8,8 @@ import simpelke from "@/public/images/simpelke.png";
 import bcdetailing from "@/public/images/bcdetailing.png";
 import rttf from "@/public/images/rttf.jpg";
 import busma from "@/public/images/newbusma.png";
+import netropolix from "@/public/images/netropolix.png";
+import togaether from "@/public/images/togaether.png";
 import internship from "@/public/images/internship.png";
 import { useTranslations } from "next-intl";
 
@@ -19,7 +21,7 @@ const ProjectsPage = () => {
   const t = useTranslations('ProjectPage');
 
   return (
-    <main className="container mt-40">
+    <main className="container px-10 lg:px-0  mt-40">
       <PageHeader title={t('projects')} />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
         <ProjectCard
@@ -28,6 +30,20 @@ const ProjectsPage = () => {
           tags={["DESIGN", "DEVELOPMENT"]}
           description="A webapplication to simplify finding a timeslot that fits everyone"
           readMoreLink="/projects/internship"
+        ></ProjectCard>
+        <ProjectCard
+          title="Demo Fabric - Togaether"
+          image={togaether}
+          tags={["DEVELOPMENT"]}
+          description=""
+          readMoreLink="/projects/togaether"
+        ></ProjectCard>
+        <ProjectCard
+          title="BPMN - Netropolix"
+          image={netropolix}
+          tags={["DEVELOPMENT"]}
+          description=""
+          readMoreLink="/projects/bpmn"
         ></ProjectCard>
         <ProjectCard
           title="Busma"

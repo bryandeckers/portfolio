@@ -39,7 +39,7 @@ const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
             <div className="flex flex-wrap gap-5">
               {project.technologies.map((technology) => (
                 <div key={technology} className="flex items-center gap-2">
-                  <Icon icon={"devicon:" + technology.toLowerCase()} />
+                  <Icon icon={"devicon:" + technology.toLowerCase().replaceAll(" ", "")} />
                   <p>{technology}</p>
                 </div>
               ))}

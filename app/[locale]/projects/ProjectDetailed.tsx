@@ -46,7 +46,14 @@ const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
             </div>
           </div>
           <div className="flex flex-col relative w-full aspect-video items-center md:items-start gap-5">
-            <Image src={project.image} alt={project.title} fill />
+            <div className="relative w-full aspect-video p-5 bg-gray-100 border-2 border-gray-300 rounded-md shadow-lg">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="rounded-md object-cover"
+              />
+            </div>
           </div>
           <div className="text-lg text-justify">
             {Array.isArray(project.description)

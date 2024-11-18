@@ -14,7 +14,7 @@ const ContactPage = () => {
   const t = useTranslations('ContactPage');
 
   return (
-    <main className="container px-10 lg:px-0  mt-20">
+    <main className="container px-10 lg:px-5  mt-20">
       <PageHeader title="Contact" />
 
       <div

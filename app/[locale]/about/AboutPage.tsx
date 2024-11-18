@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 const AboutPage = () => {
   const t = useTranslations('AboutPage');
   return (
-    <main className="container px-10 lg:px-0 mt-40 mb-5">
+    <main className="container px-10 lg:px-5 mt-40 mb-5">
       <PageHeader title={t('about')} />
 
       <section className="">

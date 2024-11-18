@@ -12,7 +12,7 @@ import { useTranslations } from "next-intl";
 const HomePage = () => {
   const t = useTranslations('HomePage');
   return (
-    <main className="container px-10 lg:px-0 mt-32 mb-20 min-h-[calc(100vh-500px)]">
+    <main className="container px-10 lg:px-5 mt-32 mb-20 min-h-[calc(100vh-500px)]">
       <section className="flex flex-col gap-10 lg:gap-10 lg:flex-row lg:items-center lg:justify-between">
         <div className="w-full lg:w-1/3">
           <h1 className="text-5xl md:text-6xl font-bold mb-10 lg:mb-5">

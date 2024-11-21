@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { Link } from '@/i18n/routing';
 import { FunctionComponent } from "react";
+import { useLocale } from "next-intl";
 
 interface ProjectDetailedProps {
   project: {
@@ -18,12 +19,14 @@ interface ProjectDetailedProps {
 const ProjectDetailed: FunctionComponent<ProjectDetailedProps> = ({
   project,
 }) => {
+  const locale = useLocale();
+
   return (
-    <main className="container px-10 lg:px-5  px-30 lg:px-60 mt-20">
+    <main className="container px-10 lg:px-5 mt-20">
       <PageHeader title={project.title} noTitleText={true} />
       <Link href="/projects" className="flex items-center hover:underline">
         <Icon icon="mdi:chevron-left" className="text-2xl" />
-        Back to projects
+        {locale === "nl" ? "Terug naar projecten" : "Back to projects"}
       </Link>
       <div className="flex flex-col items-center md:items-start gap-20 mb-20 mt-5">
         <div className="flex flex-col items-center md:items-start gap-10">

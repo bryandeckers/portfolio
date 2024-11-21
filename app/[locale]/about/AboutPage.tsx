@@ -4,10 +4,12 @@ import { Icon } from "@iconify/react";
 import { Link } from '@/i18n/routing';
 import myself2 from "@/public/images/myself2.jpeg";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const AboutPage = () => {
   const t = useTranslations('AboutPage');
+  const locale = useLocale();
+
   return (
     <main className="container px-10 lg:px-5 mt-40 mb-5">
       <PageHeader title={t('about')} />
@@ -66,14 +68,27 @@ const AboutPage = () => {
               <p>
                 {t('education1description')}
               </p>
-              <p className="mt-3">
-                These projects were for real clients or companies some of which are featured
-                in my{" "}
-                <Link href="/projects" className="hover:underline text-blue-500">
-                  projects
-                </Link>{" "}
-                page
-              </p>
+              {
+                locale === "nl" ? (
+                  <p className="mt-3">
+                    Deze projecten waren voor echte klanten of bedrijven, waarvan sommige te zien zijn
+                    op mijn{" "}
+                    <Link href="/projects" className="hover:underline text-blue-500">
+                      projecten
+                    </Link>{" "}
+                    pagina
+                  </p>
+                ) : (
+                  <p className="mt-3">
+                    These projects were for real clients or companies some of which are featured
+                    in my{" "}
+                    <Link href="/projects" className="hover:underline text-blue-500">
+                      projects
+                    </Link>{" "}
+                    page
+                  </p>
+                )
+              }
             </div>
 
             <div className="border px-4 py-6 rounded-lg mb-5">
@@ -84,16 +99,31 @@ const AboutPage = () => {
                 {t('education2time')}
               </p>
               <p>{t('education2description')}</p>
-              <p>
-                My thesis is still featured on their{" "}
-                <Link
-                  href="https://www.handelsschoolhasselt.be/nl/studie/5-6-applicatie-en-databeheer"
-                  target="_blank"
-                  className="hover:underline text-blue-500"
-                >
-                  website
-                </Link>
-              </p>
+              {
+                locale === "nl" ? (
+                  <p>
+                    Mijn thesis staat nog steeds op hun {" "}
+                    <Link
+                      href="https://www.handelsschoolhasselt.be/nl/studie/5-6-applicatie-en-databeheer"
+                      target="_blank"
+                      className="hover:underline text-blue-500"
+                    >
+                      website
+                    </Link>
+                  </p>
+                ) : (
+                  <p>
+                    My thesis is still featured on their{" "}
+                    <Link
+                      href="https://www.handelsschoolhasselt.be/nl/studie/5-6-applicatie-en-databeheer"
+                      target="_blank"
+                      className="hover:underline text-blue-500"
+                    >
+                      website
+                    </Link>
+                  </p>
+                )
+              }
             </div>
           </div>
         </div>

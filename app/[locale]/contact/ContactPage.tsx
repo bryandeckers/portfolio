@@ -2,7 +2,7 @@
 import PageHeader from "@/components/PageHeader";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const ContactPage = () => {
   const [formValues, setFormValues] = useState({
@@ -12,6 +12,7 @@ const ContactPage = () => {
 
   const [errorMessage, setErrorMessage] = useState("");
   const t = useTranslations('ContactPage');
+  const locale = useLocale();
 
   return (
     <main className="container px-10 lg:px-5  mt-20">
@@ -64,7 +65,7 @@ const ContactPage = () => {
           className="bg-green-600 text-white rounded-lg px-10 w-full md:w-fit h-12 mt-3 font-semibold ml-auto"
           onClick={() => {
             if (!formValues.email || !formValues.message) {
-              setErrorMessage("Gelieve alle velden in te vullen");
+              setErrorMessage(locale === "nl" ? "Gelieve alle velden in te vullen" : "Please fill out all fields");
               return;
             }
 

@@ -7,10 +7,70 @@ import ProjectCard from "@/components/ProjectCard";
 import waaiburg from "@/public/images/waaiburgdashboard.png";
 import dfk from "@/public/images/dfkteams.png";
 import internship from "@/public/images/internship.png";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const HomePage = () => {
   const t = useTranslations('HomePage');
+
+  const locale = useLocale();
+
+  const projects = [
+    {
+      title: "Internship project - Make it fly branded Doodle",
+      image: internship,
+      tags: ["DESIGN", "DEVELOPMENT"],
+      description: "A webapplication to simplify finding a timeslot that fits everyone",
+      readMoreLink: "/projects/internship",
+    },
+    {
+      title: "Waaiburg",
+      image: waaiburg,
+      tags: ["DESIGN", "DEVELOPMENT"],
+      description: "A dashboard for a care home, with a lot of features to make the work of the employees easier.",
+      readMoreLink: "/projects/waaiburg",
+      href: "https://dewaaiburgapp.eu/",
+    },
+    {
+      title: "Dartsfederatie Kempen",
+      image: dfk,
+      tags: ["DESIGN", "DEVELOPMENT"],
+      description:
+        "A webapplication for a darts federation, digitalizing the competition and making it easier to manage.",
+      readMoreLink: "/projects/dartsfederatiekempen",
+      href: "https://dartsfederatiekempen.be",
+    },
+  ];
+
+  const projectsNL = [
+    {
+      title: "Stageproject - Make it fly Doodle",
+      image: internship,
+      tags: ["DESIGN", "ONTWIKKELING"],
+      description: "Een webapplicatie om het vinden van een geschikte tijdslot eenvoudiger te maken.",
+      readMoreLink: "/projects/internship",
+    },
+    {
+      title: "Waaiburg",
+      image: waaiburg,
+      tags: ["DESIGN", "ONTWIKKELING"],
+      description:
+        "Een dashboard voor een zorgcentrum, met veel functies om het werk van de medewerkers eenvoudiger te maken.",
+      readMoreLink: "/projects/waaiburg",
+      href: "https://dewaaiburgapp.eu/",
+    },
+    {
+      title: "Dartsfederatie Kempen",
+      image: dfk,
+      tags: ["DESIGN", "ONTWIKKELING"],
+      description:
+        "Een webapplicatie voor een dartsfederatie, die de competitie digitaliseert en het beheer eenvoudiger maakt.",
+      readMoreLink: "/projects/dartsfederatiekempen",
+      href: "https://dartsfederatiekempen.be",
+    },
+  ];
+
+  const toBeMappedProjects = locale === "nl" ? projectsNL : projects;
+
   return (
     <main className="container px-10 lg:px-5 mt-32 mb-20 min-h-[calc(100vh-500px)]">
       <section className="flex flex-col gap-10 lg:gap-10 lg:flex-row lg:items-center lg:justify-between">
@@ -40,29 +100,20 @@ const HomePage = () => {
       <section className="mt-40" id="projects">
         <h2 className="text-3xl font-semibold mb-5">{t('featured')}</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch gap-10">
-          <ProjectCard
-            title="Internship project - Make it fly branded Doodle"
-            image={internship}
-            tags={["DESIGN", "DEVELOPMENT"]}
-            description="A webapplication to simplify finding a timeslot that fits everyone"
-            readMoreLink="/projects/internship"
-          ></ProjectCard>
-          <ProjectCard
-            title="Waaiburg"
-            image={waaiburg}
-            href="https://dewaaiburgapp.eu/"
-            readMoreLink="/projects/waaiburg"
-            tags={["DESIGN", "DEVELOPMENT"]}
-            description="A dashboard for a care home, with a lot of features to make the work of the employees easier."
-          ></ProjectCard>
-          <ProjectCard
-            title="Dartsfederatie Kempen"
-            image={dfk}
-            href="https://dartsfederatiekempen.be"
-            readMoreLink="/projects/dartsfederatiekempen"
-            tags={["DESIGN", "DEVELOPMENT"]}
-            description="A webapplication for a darts federation, digitalizing the competition and making it easier to manage."
-          ></ProjectCard>
+          {
+            toBeMappedProjects.map((project) => {
+              return (
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  image={project.image}
+                  tags={project.tags}
+                  description={project.description}
+                  readMoreLink={project.readMoreLink}
+                ></ProjectCard>
+              )
+            })
+          }
         </div>
       </section>
 

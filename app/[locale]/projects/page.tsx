@@ -96,7 +96,7 @@ const ProjectsPage = () => {
 
   const projectsNL = [
     {
-      title: "Stageproject - Maak het vliegend Doodle",
+      title: "Stageproject - Make it fly Doodle",
       image: internship,
       tags: ["DESIGN", "ONTWIKKELING"],
       description: "Een webapplicatie om het vinden van een geschikte tijdslot eenvoudiger te maken.",

@@ -179,6 +179,7 @@ const ProjectsPage = () => {
           toBeMappedProjects.map((project) => {
             return (
               <ProjectCard
+                key={project.title}
                 title={project.title}
                 image={project.image}
                 tags={project.tags}

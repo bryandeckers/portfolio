@@ -149,7 +149,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
 
   const projectDataNL = {
     internship: {
-      title: "Test nl",
+      title: "Stage project - Make it fly Doodle",
       shortdescription: "Een op maat gemaakte planningsapplicatie voor Make it Fly, ontworpen als een merkalternatief voor Doodle, afgestemd op de specifieke behoeften van het bedrijf, met functionaliteiten zoals het plannen van evenementen, stemmen door deelnemers en Google Calendar-integratie.",
       description: [
         "Dit project is ontwikkeld als onderdeel van mijn stage bij Thomas More. Het doel was om een gebrandmerkte versie van Doodle te creëren voor Make it Fly, met specifieke functies om te voldoen aan de eisen van het bedrijf. De applicatie biedt de volgende functionaliteiten:",

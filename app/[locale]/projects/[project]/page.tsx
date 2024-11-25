@@ -13,10 +13,24 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
   const projectData = {
     internship: {
       title: "Internship project - Make it fly branded Doodle",
-      shortdescription:
-        "",
-      description:
-        "",
+      shortdescription: "A custom-made scheduling application for Make it Fly, designed as a branded alternative to Doodle, tailored to the company's specific needs, with functionalities like event scheduling, participant voting, and Google Calendar integration.",
+      description: [
+        "This project was developed as part of my internship at Thomas More. The goal was to create a branded version of Doodle for Make it Fly, providing specific features to meet the company's requirements. The application offers the following functionalities:",
+        "<strong>Organizer Features</strong>",
+        "Create forms with a specified title, description, and location.",
+        "Select multiple time slots and define the duration for each.",
+        "Invite both external participants and employees.",
+        "Send automated reminders to participants who haven't responded within a set number of days.",
+        "<strong>Participant Features</strong>",
+        "Choose one or multiple time slots from the form.",
+        "Respond with options such as \"Yes,\" \"No,\" or \"If necessary.\"",
+        "Automatically notify the organizer via email once the form is completed.",
+        "<strong>Google Calendar Integration</strong>",
+        "Organizers can easily check their availability while scheduling events.",
+        "Time slots marked as \"Yes\" by participants are automatically blocked in their calendars.",
+        "Once a time slot is finalized, other slots are removed, leaving only the confirmed event in the organizer's calendar.",
+        "This project was built using modern technologies, including <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong>, and <strong>Figma</strong>, ensuring a robust, responsive, and user-friendly application tailored to Make it Fly's branding and functionality requirements."
+      ],
       image: "/images/internship.png",
       technologies: ["NextJS", "Typescript", "Figma", "TailwindCSS"],
     },
@@ -55,7 +69,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     dartsfederatiekempen: {
       title: "Dartsfederatie Kempen",
       shortdescription:
-        "The Dartsfederatie Kempen Web Application project is a comprehensive solution created for Dartsfederatie Kempen, one of the largest, if not the largest, darts federations in the Kempen region. The goal was to develop a robust web application that enables them to efficiently manage and update their players, teams, and clubs, as well as schedule matches and input scores. This web application greatly streamlines their workflow, providing a user-friendly platform to enhance their administrative tasks.",
+        "The DFK project is a comprehensive solution created for Dartsfederatie Kempen, one of the largest, if not the largest, darts federations in the Kempen region. The goal was to develop a robust web application that enables them to efficiently manage and update their players, teams, and clubs, as well as schedule matches and input scores. This web application greatly streamlines their workflow, providing a user-friendly platform to enhance their administrative tasks.",
       description: [
         "The primary goal of this web application was to create a centralized platform for managing the operations of the federation. This included managing <strong>players, teams, and clubs</strong>, with features to <strong>create, edit, and delete</strong> these entities while ensuring they were seamlessly interconnected. The centralized system aimed to <strong>simplify administrative tasks</strong> and improve communication among federation members.",
         "Additionally, the application featured a <strong>competition management system</strong> to track and record match days for all participating teams. This data was used to generate individual <strong>rankings</strong> and create an accurate <strong>leaderboard</strong>.",
@@ -76,7 +90,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     bcdetailing: {
       title: "BC Detailing",
       shortdescription:
-        "The BC Detailing Web Application project was developed for BC Detailing, a car detailing company based in Belgium. The goal was to create a comprehensive web application that would enable the company to manage their services, appointments, and customer data, while providing an intuitive and visually appealing platform for their clients.",
+        "The BC Detailing project was developed for BC Detailing, a car detailing company based in Belgium. The goal was to create a comprehensive web application that would enable the company to manage their services, appointments, and customer data, while providing an intuitive and visually appealing platform for their clients.",
       description: [],
       image: "/images/bcdetailing.png",
       technologies: [
@@ -90,7 +104,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     simpelke: {
       title: "Simpelke",
       shortdescription:
-        "The Simpelke Web Application project was developed for Simpelke, a local business based in Belgium. The goal was to create a comprehensive web application that would enable the company to manage their services, appointments, and customer data, while providing an intuitive and visually appealing platform for their clients.",
+        "The Simpelke project was developed for Simpelke, a local business based in Belgium. The goal was to create a comprehensive web application that would enable the company to manage their services, appointments, and customer data, while providing an intuitive and visually appealing platform for their clients.",
       description: [],
       image: "/images/simpelke.png",
       technologies: [
@@ -128,10 +142,24 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
   const projectDataNL = {
     internship: {
       title: "Test nl",
-      shortdescription:
-        "",
-      description:
-        "",
+      shortdescription: "Een op maat gemaakte planningsapplicatie voor Make it Fly, ontworpen als een merkalternatief voor Doodle, afgestemd op de specifieke behoeften van het bedrijf, met functionaliteiten zoals het plannen van evenementen, stemmen door deelnemers en Google Calendar-integratie.",
+      description: [
+        "Dit project is ontwikkeld als onderdeel van mijn stage bij Thomas More. Het doel was om een gebrandmerkte versie van Doodle te creëren voor Make it Fly, met specifieke functies om te voldoen aan de eisen van het bedrijf. De applicatie biedt de volgende functionaliteiten:",
+        "<strong>Organisator Functies</strong>",
+        "Maak formulieren aan met een opgegeven titel, beschrijving en locatie.",
+        "Selecteer meerdere tijdsloten en bepaal de duur voor elk tijdslot.",
+        "Nodig zowel externe deelnemers als medewerkers uit.",
+        "Stuur geautomatiseerde herinneringen naar deelnemers die niet hebben gereageerd binnen een vastgesteld aantal dagen.",
+        "<strong>Deelnemer Functies</strong>",
+        "Kies een of meerdere tijdsloten uit het formulier.",
+        "Beantwoord met opties zoals \"Ja,\" \"Nee,\" of \"Indien nodig.\"",
+        "Stuur automatisch een e-mail naar de organisator zodra het formulier is ingevuld.",
+        "<strong>Google Calendar Integratie</strong>",
+        "Organisatoren kunnen eenvoudig hun beschikbaarheid controleren tijdens het inplannen van evenementen.",
+        "Tijdsloten die als \"Ja\" gemarkeerd zijn door deelnemers worden automatisch geblokkeerd in hun agenda's.",
+        "Zodra een tijdslot is bevestigd, worden andere tijdsloten verwijderd, waardoor alleen het bevestigde evenement in de agenda van de organisator blijft staan.",
+        "Dit project is gebouwd met moderne technologieën, waaronder <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong> en <strong>Figma</strong>, wat zorgt voor een robuuste, responsieve en gebruiksvriendelijke applicatie die is afgestemd op de branding en functionele vereisten van Make it Fly."
+      ],
       image: "/images/internship.png",
       technologies: ["NextJS", "Typescript", "Figma", "TailwindCSS"],
     },
@@ -168,7 +196,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     },
     dartsfederatiekempen: {
       title: "Dartsfederatie Kempen",
-      shortdescription: "Het Dartsfederatie Kempen Web Application project is een uitgebreide oplossing gemaakt voor Dartsfederatie Kempen, één van de grootste, zo niet de grootste, dartsfederatie in de Kempen. Het doel was om een robuuste webapplicatie te ontwikkelen die hen in staat stelt om op een efficiënte manier hun spelers, teams en clubs te beheren en bij te werken, alsook wedstrijden te plannen en scores in te voeren. Deze webapplicatie stroomlijnt hun workflow aanzienlijk en biedt een gebruiksvriendelijk platform om hun administratieve taken te verbeteren.",
+      shortdescription: "Het DFK project is een uitgebreide oplossing gemaakt voor Dartsfederatie Kempen, één van de grootste, zo niet de grootste, dartsfederatie in de Kempen. Het doel was om een robuuste webapplicatie te ontwikkelen die hen in staat stelt om op een efficiënte manier hun spelers, teams en clubs te beheren en bij te werken, alsook wedstrijden te plannen en scores in te voeren. Deze webapplicatie stroomlijnt hun workflow aanzienlijk en biedt een gebruiksvriendelijk platform om hun administratieve taken te verbeteren.",
       description: [
         "Het primaire doel van deze webapplicatie was om een gecentraliseerd platform te creëren voor het beheren van de operaties van de federatie. Dit omvatte het beheren van <strong>spelers, teams en clubs</strong>, met functies om deze entiteiten te <strong>maken, bewerken en verwijderen</strong> en ervoor te zorgen dat ze naadloos met elkaar verbonden waren. Het gecentraliseerde systeem was bedoeld om <strong>administratieve taken te vereenvoudigen</strong> en de communicatie tussen de leden van de federatie te verbeteren.",
         "Daarnaast bevatte de applicatie een <strong>competitiebeheersysteem</strong> om wedstrijddagen van alle deelnemende teams bij te houden en vast te leggen. Deze gegevens werden gebruikt om individuele <strong>rankings</strong> te genereren en een nauwkeurig <strong>klassement</strong> te maken.",
@@ -188,7 +216,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     },
     bcdetailing: {
       title: "BC Detailing",
-      shortdescription: "Het BC Detailing Web Application project werd ontwikkeld voor BC Detailing, een autodetailing bedrijf gevestigd in België. Het doel was om een uitgebreide webapplicatie te maken die het bedrijf in staat zou stellen om hun diensten, afspraken en klantgegevens te beheren en tegelijkertijd een intuïtief en visueel aantrekkelijk platform te bieden aan hun klanten.",
+      shortdescription: "Het BC Detailing project werd ontwikkeld voor een autodetailing bedrijf gevestigd in België. Het doel was om een uitgebreide webapplicatie te maken die het bedrijf in staat zou stellen om hun diensten, afspraken en klantgegevens te beheren en tegelijkertijd een intuïtief en visueel aantrekkelijk platform te bieden aan hun klanten.",
       description: [],
       image: "/images/bcdetailing.png",
       technologies: [
@@ -201,7 +229,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     },
     simpelke: {
       title: "Simpelke",
-      shortdescription: "Het Simpelke Web Application project werd ontwikkeld voor Simpelke, een lokaal bedrijf gevestigd in België. Het doel was om een uitgebreide webapplicatie te maken die het bedrijf in staat zou stellen om hun diensten, afspraken en klantgegevens te beheren en tegelijkertijd een intuïtief en visueel aantrekkelijk platform te bieden aan hun klanten.",
+      shortdescription: "Het Simpelke project werd ontwikkeld voor Simpelke, een lokale frituur. Het doel was om een uitgebreide webapplicatie te maken die het bedrijf in staat zou stellen om hun diensten, afspraken en klantgegevens te beheren en tegelijkertijd een intuïtief en visueel aantrekkelijk platform te bieden aan hun klanten.",
       description: [],
       image: "/images/simpelke.png",
       technologies: [

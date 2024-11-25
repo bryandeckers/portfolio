@@ -1,11 +1,13 @@
 "use client"
-import { FunctionComponent, useState } from "react";
+import { ChangeEvent, FunctionComponent, useState, useTransition } from "react";
 import { Link } from '@/i18n/routing';
 import NavItem from "./NavItem";
 import Image from "next/image";
 import logo from "@/public/images/bd-logo-black.png";
 import { Icon } from "@iconify/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { Locale, usePathname, useRouter } from '@/i18n/routing';
+import { useParams } from 'next/navigation';
 
 const Navbar: FunctionComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +17,24 @@ const Navbar: FunctionComponent = () => {
   };
 
   const t = useTranslations('Navbar');
+  const [isPending, startTransition] = useTransition();
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
+  const params = useParams();
+
+  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
+    const nextLocale = event.target.value as Locale;
+    startTransition(() => {
+      router.replace(
+        // @ts-expect-error -- TypeScript will validate that only known `params`
+        // are used in combination with a given `pathname`. Since the two will
+        // always match for the current route, we can skip runtime checks.
+        { pathname, params },
+        { locale: nextLocale }
+      );
+    });
+  }
 
   return (
     <header className="mt-5">
@@ -37,6 +57,14 @@ const Navbar: FunctionComponent = () => {
               <NavItem link="/about" text={t('about')} />
               <NavItem link="/projects" text={t('projects')} />
               <NavItem link="/contact" text={t('contact')} />
+              <select
+                className="block w-full px-4 py-2 text-sm text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
+                onChange={onSelectChange}
+              >
+                <option value="" disabled selected>{locale === "nl" ? "Selecteer taal" : "Choose language"}</option>
+                <option value="en">EN</option>
+                <option value="nl">NL</option>
+              </select>
             </ul>
           </nav>
         </div>

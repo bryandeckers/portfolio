@@ -37,21 +37,29 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     togaether: {
       title: "Demo Fabric - Togaether",
       shortdescription:
-        "",
+        "For Togaether, we had the opportunity to test the latest Microsoft Fabric tool and demonstrate how data can be processed and visualized through an advanced pipeline that can be pitched to their clients.",
       description:
-        "",
+        [
+          "In this project, we leveraged the power of <strong>Microsoft Fabric</strong> to develop a demo for Togaether. We worked with the <strong>Adventure Works dataset</strong> and created a <strong>master pipeline</strong> consisting of several <strong>subpipelines</strong>. These subpipelines process the data via <strong>Apache Spark notebooks</strong>, which clean, enrich, and store the data in <strong>delta tables</strong>.",
+          "The <strong>delta tables</strong> can then be easily loaded into <strong>Power BI</strong> for visualization, allowing users to gain insights into the data quickly. Additionally, we implemented <strong>slowly changing dimensions</strong> type 1 and 2 to accurately track changes in the data.",
+          "The end result is a fully automated pipeline that reads, transforms, stores, and processes <strong>sales data</strong> into a dynamic dashboard, enabling Togaether and their clients to fully harness the potential of their data."
+        ],
       image: "/images/togaether.png",
       technologies: ["Microsoft Fabric", "Apache Spark"],
-    },
+    },    
     bpmn: {
       title: "BPMN - Netropolix",
       shortdescription:
-        "",
+        "For Netropolix (now NTX), I visualized the recruitment process by creating a detailed BPMN model, showcasing each step a candidate may go through. This helps to identify potential issues in the process.",
       description:
-        "",
+        [
+          "In this project, I developed a <strong>BPMN model</strong> to visualize the <strong>recruitment process</strong> for Netropolix, now NTX. The model outlines every step a candidate could experience, from the initial application to the final hiring decision.",
+          "By visualizing the process in a clear and structured manner, the BPMN diagram helps to highlight any potential bottlenecks or inefficiencies that may arise during recruitment. This allows for timely adjustments and improvements to streamline the hiring workflow.",
+          "The end result is a comprehensive <strong>visual representation</strong> of the recruitment journey, enabling the team to better understand the flow of candidates and pinpoint areas for optimization."
+        ],
       image: "/images/netropolix.png",
       technologies: [],
-    },
+    },    
     waaiburg: {
       title: "Waaiburg",
       shortdescription:
@@ -166,21 +174,29 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
     togaether: {
       title: "Demo Fabric - Togaether",
       shortdescription:
-        "",
+        "Voor Togaether mochten we de nieuwste Microsoft Fabric-tool testen en demonstreren, waarmee ze hun klanten kunnen laten zien hoe data wordt verwerkt en gevisualiseerd via een geavanceerde pipeline.",
       description:
-        "",
+        [
+          "In dit project hebben we de kracht van <strong>Microsoft Fabric</strong> benut om een demo te ontwikkelen voor Togaether. We werkten met de <strong>Adventure Works-dataset</strong> en creëerden een <strong>master pipeline</strong> die bestaat uit verschillende <strong>subpipelines</strong>. Deze subpipelines verwerken de data via <strong>Apache Spark-notebooks</strong>, die de data opschonen, verrijken en in <strong>delta-tabellen</strong> opslaan.",
+          "De <strong>delta-tabellen</strong> kunnen vervolgens eenvoudig worden geladen in <strong>Power BI</strong> voor visualisatie, waardoor gebruikers snel inzicht krijgen in de data. Daarnaast hebben we <strong>slowly changing dimensions</strong> type 1 en 2 geïmplementeerd, zodat wijzigingen in de data nauwkeurig kunnen worden gevolgd.",
+          "Het eindresultaat is een volledig geautomatiseerde pipeline die <strong>salesdata</strong> inleest, transformeert, opslaat en verwerkt tot een dynamisch dashboard, wat Togaether en hun klanten in staat stelt om het volledige potentieel van de data te benutten."
+        ],
       image: "/images/togaether.png",
       technologies: ["Microsoft Fabric", "Apache Spark"],
     },
     bpmn: {
       title: "BPMN - Netropolix",
       shortdescription:
-        "",
+        "Voor Netropolix (nu NTX) heb ik het recruteringsproces gevisualiseerd door een gedetailleerd BPMN-model te maken, waarbij elke stap die een kandidaat door kan lopen wordt getoond. Dit helpt mogelijke problemen in het proces te identificeren.",
       description:
-        "",
+        [
+          "In dit project heb ik een <strong>BPMN-model</strong> ontwikkeld om het <strong>recruteringsproces</strong> voor Netropolix, nu NTX, te visualiseren. Het model toont elke stap die een kandidaat kan doorlopen, van de eerste sollicitatie tot de uiteindelijke aanwervingsbeslissing.",
+          "Door het proces op een duidelijke en gestructureerde manier te visualiseren, helpt het BPMN-diagram mogelijke knelpunten of inefficiënties in het recruteringsproces te identificeren. Dit maakt het mogelijk om tijdig aanpassingen door te voeren en verbeteringen aan te brengen om de wervingsworkflow te stroomlijnen.",
+          "Het eindresultaat is een uitgebreide <strong>visuele representatie</strong> van de kandidaatreis, waarmee het team beter inzicht krijgt in de stroom van kandidaten en gebieden voor optimalisatie kan aanwijzen."
+        ],
       image: "/images/netropolix.png",
       technologies: [],
-    },
+    },    
     waaiburg: {
       title: "Waaiburg",
       shortdescription: "De Waaiburg Webapp/App is een op maat gemaakte webapplicatie ontwikkeld voor De Waaiburg, een organisatie die jongeren in moeilijke thuissituaties ondersteunt.Deze webapp biedt volledige controle over de bijbehorende mobiele app, waardoor het personeel van De Waaiburg de functionaliteit en gebruikersaccounts kan beheren en waardevolle gegevens kan verzamelen om de effectiviteit van de app te evalueren.",

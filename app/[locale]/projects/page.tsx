@@ -33,14 +33,14 @@ const ProjectsPage = () => {
       title: "Demo Fabric - Togaether",
       image: togaether,
       tags: ["DEVELOPMENT"],
-      description: "",
+      description: "Test the latest Microsoft Fabric tool and demonstrate how data can be processed and visualized through an advanced pipeline that can be pitched to their clients.",
       readMoreLink: "/projects/togaether",
     },
     {
       title: "BPMN - Netropolix",
       image: netropolix,
       tags: ["DEVELOPMENT"],
-      description: "",
+      description: "Visualized the recruitment process by creating a detailed BPMN model, showcasing each step a candidate may go through.",
       readMoreLink: "/projects/bpmn",
     },
     {
@@ -106,14 +106,14 @@ const ProjectsPage = () => {
       title: "Demo Fabric - Togaether",
       image: togaether,
       tags: ["ONTWIKKELING"],
-      description: "",
+      description: "Nieuwste Microsoft Fabric-tool testen en demonstreren, waarmee ze hun klanten kunnen laten zien hoe data wordt verwerkt en gevisualiseerd via een geavanceerde pipeline.",
       readMoreLink: "/projects/togaether",
     },
     {
       title: "BPMN - Netropolix",
       image: netropolix,
       tags: ["ONTWIKKELING"],
-      description: "",
+      description: "Recruteringsproces gevisualiseerd door een gedetailleerd BPMN-model te maken, waarbij elke stap die een kandidaat door kan lopen wordt getoond.",
       readMoreLink: "/projects/bpmn",
     },
     {

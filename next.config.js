@@ -8,7 +8,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: false,
 }
 
 module.exports = withNextIntl(nextConfig);

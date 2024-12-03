@@ -299,7 +299,7 @@ const ProjectDetailedPage = ({ params }: { params: { project: string } }) => {
           project as {
             title: string;
             shortdescription: string;
-            description: string;
+            description: string[];
             image: string;
             technologies: string[];
           }

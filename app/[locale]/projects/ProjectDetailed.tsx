@@ -10,7 +10,7 @@ interface ProjectDetailedProps {
   project: {
     title: string;
     shortdescription: string;
-    description: string;
+    description: string[];
     image: string;
     technologies: string[];
   }

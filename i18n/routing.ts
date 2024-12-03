@@ -7,7 +7,17 @@ export const routing = defineRouting({
 
     // Used when no locale matches
     defaultLocale: 'en',
-    localePrefix: 'always'
+    localePrefix: 'always',
+    domains: [
+        {
+            domain: 'bryandeckers.com',
+            defaultLocale: 'en',
+        },
+        {
+            domain: 'www.bryandeckers.com',
+            defaultLocale: 'en'
+        }
+    ]
 });
 
 export type Locale = (typeof routing.locales)[number];

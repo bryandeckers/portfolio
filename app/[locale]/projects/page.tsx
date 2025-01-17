@@ -7,7 +7,6 @@ import dfk from "@/public/images/dfkteams.png";
 import simpelke from "@/public/images/simpelke.png";
 import bcdetailing from "@/public/images/bcdetailing.png";
 import rttf from "@/public/images/rttf.jpg";
-import busma from "@/public/images/newbusma.png";
 import netropolix from "@/public/images/netropolix.png";
 import togaether from "@/public/images/togaether.png";
 import internship from "@/public/images/internship.png";
@@ -42,14 +41,6 @@ const ProjectsPage = () => {
       tags: ["DEVELOPMENT"],
       description: "Visualized the recruitment process by creating a detailed BPMN model, showcasing each step a candidate may go through.",
       readMoreLink: "/projects/bpmn",
-    },
-    {
-      title: "Busma",
-      image: busma,
-      tags: ["DESIGN", "DEVELOPMENT"],
-      description: "A platform that combines all the needs in order to manage events smoothly.",
-      readMoreLink: "/projects/busma",
-      href: "https://busma.be/",
     },
     {
       title: "Race to the future",
@@ -115,14 +106,6 @@ const ProjectsPage = () => {
       tags: ["ONTWIKKELING"],
       description: "Recruteringsproces gevisualiseerd door een gedetailleerd BPMN-model te maken, waarbij elke stap die een kandidaat door kan lopen wordt getoond.",
       readMoreLink: "/projects/bpmn",
-    },
-    {
-      title: "Busma",
-      image: busma,
-      tags: ["DESIGN", "ONTWIKKELING"],
-      description: "Een platform dat alles combineert om evenementen soepel te beheren.",
-      readMoreLink: "/projects/busma",
-      href: "https://busma.be/",
     },
     {
       title: "Race naar de toekomst",

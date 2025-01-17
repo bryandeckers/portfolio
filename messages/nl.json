@@ -2,7 +2,7 @@
     "Navbar": {
         "home": "Home",
         "internship": "Stage",
-        "about": "Over",
+        "about": "Over mij",
         "projects": "Projecten",
         "contact": "Contact"
     },
@@ -11,14 +11,14 @@
         "landingtext": "Hey, ik ben Bryan Deckers, een gepassioneerde ontwikkelaar uit het mooie Limburg, België",
         "featured": "Uitgelichte Projecten",
         "about": "Over mij",
-        "abouttext1": "Ik ben Bryan Deckers, een full stack ontwikkelaar met een passie voor het web. Ik ben gespecialiseerd in zowel front-end als back-end ontwikkeling. Momenteel ben ik zelfstandig, wat me de mogelijkheid biedt om mijn professionele projecten naast mijn studie Toegepaste Informatica aan de universiteit na te streven.",
+        "abouttext1": "Ik ben Bryan Deckers, een full stack ontwikkelaar met een passie voor het web. Ik ben gespecialiseerd in zowel front-end als back-end ontwikkeling. Momenteel ben ik zelfstandig, wat me de mogelijkheid biedt om mijn professionele projecten naast mijn studie Toegepaste Informatica aan de hogeschool na te streven.",
         "abouttext2": "Mijn reis in de wereld van ontwikkeling begon enkele jaren geleden, en in de loop van de tijd heb ik mijn vaardigheden aangescherpt in technologieën zoals JavaScript, TypeScript, React, Node.js en databases. Ik geniet ervan om dynamische, efficiënte en schaalbare applicaties te bouwen die echte problemen oplossen. Ik blijf graag op de hoogte van de nieuwste trends in technologie en werk voortdurend aan het verbeteren van mijn vakmanschap.",
         "readmore": "Lees meer",
         "contact": "Neem contact op"
     },
     "AboutPage": {
         "about": "Over",
-        "aboutpart1": "Ik ben <strong>Bryan Deckers</strong>, een <strong>full stack ontwikkelaar</strong> met een passie voor het <strong>web</strong>. Ik specialiseer me zowel in <strong>front-end</strong> als <strong>back-end ontwikkeling</strong>. Momenteel ben ik <strong>zelfstandig</strong>, wat me de mogelijkheid biedt om mijn professionele projecten naast mijn studie <strong>Toegepaste Informatica</strong> aan de universiteit na te streven.",
+        "aboutpart1": "Ik ben <strong>Bryan Deckers</strong>, een <strong>full stack ontwikkelaar</strong> met een passie voor het <strong>web</strong>. Ik specialiseer me zowel in <strong>front-end</strong> als <strong>back-end ontwikkeling</strong>. Momenteel ben ik <strong>zelfstandig</strong>, wat me de mogelijkheid biedt om mijn professionele projecten naast mijn studie <strong>Toegepaste Informatica</strong> aan de hogeschool na te streven.",
         "aboutpart2": "Mijn reis in de wereld van ontwikkeling begon enkele jaren geleden, en in de loop van de tijd heb ik mijn vaardigheden aangescherpt in technologieën zoals <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React</strong>, <strong>Node.js</strong> en <strong>databases</strong>. Ik geniet ervan om <strong>dynamische</strong>, <strong>efficiënte</strong> en <strong>schaalbare applicaties</strong> te bouwen die echte problemen oplossen. Ik blijf graag op de hoogte van de nieuwste <strong>technologische trends</strong> en werk voortdurend aan het verbeteren van mijn vakmanschap.",
         "aboutpart3": "<strong>Leren</strong> is iets waar ik zeer gepassioneerd over ben, en ik besteed veel tijd aan het vergroten van mijn kennis. Of het nu gaat om het aangaan van nieuwe uitdagingen in coderen of het opdoen van nieuwe vaardigheden buiten technologie, ik ben altijd enthousiast om te <strong>groeien</strong> en mezelf verder te pushen. In mijn vrije tijd geniet ik ook van <strong>lezen</strong>, het verkennen van nieuwe <strong>technologieën</strong>, en het werken aan <strong>auto&apos;s</strong>.",
         "aboutpart4": "Ik geloof in de kracht van <strong>samenwerking</strong> en werk graag met gelijkgestemde individuen die mijn enthousiasme voor het creëren van <strong>impactvolle projecten</strong> delen. Als je wilt verbinden, potentiële mogelijkheden wilt bespreken, of gewoon wilt praten over technologie, aarzel dan niet om contact met me op te nemen. Ik sta altijd open voor nieuwe <strong>samenwerkingen</strong> en <strong>partnerschappen</strong>!",
